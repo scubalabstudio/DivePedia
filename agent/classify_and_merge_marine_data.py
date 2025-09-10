@@ -1,4 +1,5 @@
 # classify_and_merge_marine_data.py
+
 import json
 import os
 import sys
@@ -48,12 +49,44 @@ class MarineDataClassifier:
             'sea_slug_count': 0,
             'crustacean_count': 0,
             'duplicates_removed': 0,
+            'variations_merged': 0,  # 追加：バリエーション統合数
             'unclassified': 0
         }
-    
+        
+        # バリエーションを示すパターン
+        self.variation_patterns = [
+            r'[（(][幼成老若]魚[）)]',  # 幼魚、成魚、老魚、若魚
+            r'[（(]yg[）)]',  # yg (young)
+            r'[（(]juv[）)]',  # juvenile
+            r'[（(]ad[）)]',  # adult
+            r'[（(][雄雌オスメス♂♀][）)]',  # 性別
+            r'[（(][大中小][型]?[）)]',  # サイズ
+            r'[（(]\d+[cmCM][）)]',  # サイズ（数値）
+            r'[（(]婚姻色[）)]',  # 婚姻色
+            r'[（(]求愛色[）)]',  # 求愛色
+            r'[（(]夏色[）)]',  # 季節変化
+            r'[（(]冬色[）)]',
+            r'[（(]夜[）)]',  # 時間帯
+            r'[（(]昼[）)]',
+            r'[（(]産卵期[）)]',  # 産卵期
+            r'[（(]非産卵期[）)]',
+            r'[（(]変異[）)]',  # 変異
+            r'[（(]型[）)]',  # ～型
+            r'[（(]タイプ[）)]',  # タイプ
+            r'[（(]バリエーション[）)]',
+            r'[（(]個体差[）)]',
+            r'[（(]地域変異[）)]',
+            r'[（(]色彩変異[）)]',
+            r'[（(]模様違い[）)]',
+            r'[（(]別名[）)]',
+            r'[（(]旧称[）)]',
+            r'[（(]新称[）)]',
+        ]
+
     def normalize_name(self, name: str) -> str:
         """
         名前を正規化（重複判定用）
+        幼魚・成魚などのバリエーションを除去
         """
         if not name:
             return ""
@@ -68,24 +101,55 @@ class MarineDataClassifier:
             'ヂ': 'ジ',
             '・': '',
             '･': '',
-            ' ': '',
-            '　': '',
-            '（': '(',
-            '）': ')',
+            '　': ' ',  # 全角スペースを半角に
         }
         
         for old, new in replacements.items():
             normalized = normalized.replace(old, new)
         
-        # 括弧内の情報を除去（オプション）
-        # normalized = re.sub(r'\([^)]*\)', '', normalized)
+        # バリエーションパターンを除去
+        for pattern in self.variation_patterns:
+            normalized = re.sub(pattern, '', normalized, flags=re.IGNORECASE)
         
-        return normalized.lower()  # 小文字化して比較
+        # その他の括弧内情報を除去（ただし、名前の一部である可能性があるものは残す）
+        # 例：「カクレクマノミ（幼魚）」→「カクレクマノミ」
+        # 　　「ニシキヤッコ（太平洋型）」→「ニシキヤッコ」
+        normalized = re.sub(r'[（(][^）)]*[）)]', '', normalized)
+        
+        # 連続するスペースを1つに
+        normalized = re.sub(r'\s+', ' ', normalized)
+        
+        # 前後の空白を除去
+        normalized = normalized.strip()
+        
+        # 小文字化して比較
+        return normalized.lower()
     
+    def get_base_name(self, name: str) -> str:
+        """
+        バリエーション情報を除いた基本名を取得
+        （表示用：大文字小文字は保持）
+        """
+        if not name:
+            return ""
+        
+        base_name = name.strip()
+        
+        # バリエーションパターンを除去
+        for pattern in self.variation_patterns:
+            base_name = re.sub(pattern, '', base_name, flags=re.IGNORECASE)
+        
+        # その他の括弧内情報を除去
+        base_name = re.sub(r'[（(][^）)]*[）)]', '', base_name)
+        
+        # 連続するスペースを1つに
+        base_name = re.sub(r'\s+', ' ', base_name)
+        
+        return base_name.strip()
+
     def classify_creature(self, creature_data: Dict) -> str:
         """
         生き物データを分類
-        
         Returns:
             'fish', 'sea_slug', 'crustacean', or 'unknown'
         """
@@ -125,7 +189,7 @@ class MarineDataClassifier:
         
         # 分類できない場合
         return 'unknown'
-    
+
     def load_json_file(self, filepath: str) -> List[Dict]:
         """
         JSONファイルを読み込む
@@ -133,34 +197,34 @@ class MarineDataClassifier:
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                
-                # データ構造の判定
-                if isinstance(data, list):
-                    return data
-                elif isinstance(data, dict):
-                    # 様々な形式に対応
-                    if 'creatures' in data:
-                        return data['creatures']
-                    elif 'fish_list' in data:
-                        return data['fish_list']
-                    elif 'items' in data:
-                        return data['items']
-                    elif 'data' in data:
-                        return data['data']
-                    else:
-                        # 辞書の値がリストの場合
-                        for value in data.values():
-                            if isinstance(value, list) and len(value) > 0:
-                                # 最初のリスト型の値を返す
-                                if isinstance(value[0], dict):
-                                    return value
-                        return []
+            
+            # データ構造の判定
+            if isinstance(data, list):
+                return data
+            elif isinstance(data, dict):
+                # 様々な形式に対応
+                if 'creatures' in data:
+                    return data['creatures']
+                elif 'fish_list' in data:
+                    return data['fish_list']
+                elif 'items' in data:
+                    return data['items']
+                elif 'data' in data:
+                    return data['data']
                 else:
+                    # 辞書の値がリストの場合
+                    for value in data.values():
+                        if isinstance(value, list) and len(value) > 0:
+                            # 最初のリスト型の値を返す
+                            if isinstance(value[0], dict):
+                                return value
                     return []
+            else:
+                return []
         except Exception as e:
             print(f"  警告: {filepath} の読み込みに失敗: {e}")
             return []
-    
+
     def process_directory(self, directory_path: str):
         """
         ディレクトリ内の全JSONファイルを処理
@@ -180,8 +244,8 @@ class MarineDataClassifier:
         # 各ファイルを処理
         for i, filepath in enumerate(json_files, 1):
             print(f"\n[{i}/{len(json_files)}] 処理中: {os.path.basename(filepath)}")
-            
             creatures = self.load_json_file(filepath)
+            
             if not creatures:
                 continue
             
@@ -202,16 +266,74 @@ class MarineDataClassifier:
                     # 分類できないものはエビ・カニカテゴリーに入れる
                     self.crustacean_data.append(creature)
                     self.stats['unclassified'] += 1
-    
+
+    def merge_variations(self, data_list: List[Dict]) -> List[Dict]:
+        """
+        バリエーション（幼魚・成魚など）を統合
+        """
+        merged_data = {}
+        variations_count = 0
+        
+        for item in data_list:
+            name = item.get('name', '')
+            if not name:
+                continue
+            
+            # 正規化された名前を取得
+            normalized = self.normalize_name(name)
+            base_name = self.get_base_name(name)
+            
+            if normalized not in merged_data:
+                # 新規追加（基本名を使用）
+                item_copy = item.copy()
+                item_copy['name'] = base_name
+                item_copy['original_names'] = [name]  # 元の名前を記録
+                merged_data[normalized] = item_copy
+            else:
+                # 既存のデータと統合
+                existing = merged_data[normalized]
+                
+                # 元の名前を記録
+                if 'original_names' not in existing:
+                    existing['original_names'] = [existing.get('name', '')]
+                if name not in existing['original_names']:
+                    existing['original_names'].append(name)
+                
+                # より情報が多い方のデータを保持
+                for key, value in item.items():
+                    if key not in existing or (value and not existing.get(key)):
+                        existing[key] = value
+                
+                variations_count += 1
+        
+        self.stats['variations_merged'] += variations_count
+        
+        # リストに変換
+        result = list(merged_data.values())
+        
+        # original_namesフィールドをクリーンアップ（オプション）
+        for item in result:
+            if 'original_names' in item and len(item['original_names']) > 1:
+                # バリエーション情報として保存
+                item['variations'] = ', '.join(item['original_names'])
+            # original_namesフィールドを削除（必要に応じて）
+            item.pop('original_names', None)
+        
+        return result
+
     def remove_duplicates(self, data_list: List[Dict]) -> List[Dict]:
         """
-        重複を除去
+        重複を除去（バリエーション統合後）
         """
+        # まずバリエーションを統合
+        merged_data = self.merge_variations(data_list)
+        
+        # その後、完全な重複を除去
         seen_names = {}
         unique_data = []
         duplicates = 0
         
-        for item in data_list:
+        for item in merged_data:
             name = item.get('name', '')
             if not name:
                 continue
@@ -240,7 +362,7 @@ class MarineDataClassifier:
         
         self.stats['duplicates_removed'] += duplicates
         return unique_data
-    
+
     def save_classified_data(self, output_dir: str = None):
         """
         分類されたデータを保存
@@ -252,9 +374,9 @@ class MarineDataClassifier:
         os.makedirs(output_dir, exist_ok=True)
         
         print("\n" + "="*60)
-        print("重複を除去中...")
+        print("バリエーションを統合し、重複を除去中...")
         
-        # 重複除去
+        # 重複除去とバリエーション統合
         unique_fish = self.remove_duplicates(self.fish_data)
         unique_sea_slug = self.remove_duplicates(self.sea_slug_data)
         unique_crustacean = self.remove_duplicates(self.crustacean_data)
@@ -262,8 +384,10 @@ class MarineDataClassifier:
         # IDを再割り当て
         for i, item in enumerate(unique_fish, 1):
             item['id'] = i
+        
         for i, item in enumerate(unique_sea_slug, 1):
             item['id'] = i
+        
         for i, item in enumerate(unique_crustacean, 1):
             item['id'] = i
         
@@ -302,8 +426,8 @@ class MarineDataClassifier:
             f.write(f"処理ファイル数: {self.stats['total_files']}\n")
             f.write(f"総レコード数: {self.stats['total_records']}\n")
             f.write(f"重複除去数: {self.stats['duplicates_removed']}\n")
+            f.write(f"バリエーション統合数: {self.stats['variations_merged']}\n")
             f.write(f"分類不能数: {self.stats['unclassified']}\n\n")
-            
             f.write("分類結果:\n")
             f.write("-"*40 + "\n")
             f.write(f"魚類: {self.stats['fish_count']}種\n")
@@ -317,7 +441,6 @@ class MarineDataClassifier:
 
 def main():
     """メイン処理"""
-    
     # データディレクトリの指定
     if len(sys.argv) > 1:
         data_dir = sys.argv[1]
@@ -347,6 +470,7 @@ def main():
     print(f"処理ファイル数: {classifier.stats['total_files']}")
     print(f"総レコード数: {classifier.stats['total_records']}")
     print(f"重複除去数: {classifier.stats['duplicates_removed']}")
+    print(f"バリエーション統合数: {classifier.stats['variations_merged']}")
     print("\n分類結果:")
     print(f"  魚類: {classifier.stats['fish_count']}種")
     print(f"  ウミウシ: {classifier.stats['sea_slug_count']}種")
