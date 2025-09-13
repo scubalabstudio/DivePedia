@@ -81,12 +81,16 @@ class MarineDataClassifier:
             r'[（(]別名[）)]',
             r'[（(]旧称[）)]',
             r'[（(]新称[）)]',
+            r'[（(]\d+[）)]',  # (1), (2)など
+            r'[（(][ABC][）)]',  # (A), (B)など
+            r'[（(]その[12][）)]',  # その1、その2など
         ]
 
     def normalize_name(self, name: str) -> str:
         """
         名前を正規化（重複判定用）
         幼魚・成魚などのバリエーションを除去
+        「属の1種」パターンも統一
         """
         if not name:
             return ""
@@ -107,13 +111,37 @@ class MarineDataClassifier:
         for old, new in replacements.items():
             normalized = normalized.replace(old, new)
         
+        # 「属の1種」パターンを統一
+        # 例：「ハナダイ属の1種」「ハナダイ属の一種」「ハナダイsp.」→ すべて「ハナダイ属」として扱う
+        genus_patterns = [
+            r'属の[1一]種.*$',  # 「属の1種」「属の一種」以降を削除
+            r'属の仲間.*$',      # 「属の仲間」以降を削除
+            r'の[1一]種.*$',     # 「の1種」「の一種」以降を削除
+            r'の仲間.*$',        # 「の仲間」以降を削除
+            r'\s*sp\.$',         # 「sp.」を削除
+            r'\s*sp[\.]*\d*$',   # 「sp」「sp1」「sp2」などを削除
+            r'\s*spp\.$',        # 「spp.」を削除
+            r'\s*cf\.\s*',       # 「cf.」（比較種）を削除
+            r'\s*aff\.\s*',      # 「aff.」（近似種）を削除
+            r'種群.*$',          # 「種群」以降を削除
+            r'複合種.*$',        # 「複合種」以降を削除
+            r'未記載種.*$',      # 「未記載種」以降を削除
+            r'未同定種.*$',      # 「未同定種」以降を削除
+        ]
+        
+        for pattern in genus_patterns:
+            normalized = re.sub(pattern, '', normalized, flags=re.IGNORECASE)
+        
+        # 属名だけが残った場合、「属」を付ける
+        if not normalized.endswith('属') and any(pattern in name for pattern in ['属の', 'sp.', 'sp', 'spp.']):
+            if '属' not in normalized:
+                normalized = normalized + '属'
+        
         # バリエーションパターンを除去
         for pattern in self.variation_patterns:
             normalized = re.sub(pattern, '', normalized, flags=re.IGNORECASE)
         
-        # その他の括弧内情報を除去（ただし、名前の一部である可能性があるものは残す）
-        # 例：「カクレクマノミ（幼魚）」→「カクレクマノミ」
-        # 　　「ニシキヤッコ（太平洋型）」→「ニシキヤッコ」
+        # その他の括弧内情報を除去
         normalized = re.sub(r'[（(][^）)]*[）)]', '', normalized)
         
         # 連続するスペースを1つに
@@ -129,11 +157,34 @@ class MarineDataClassifier:
         """
         バリエーション情報を除いた基本名を取得
         （表示用：大文字小文字は保持）
+        「属の1種」パターンも統一
         """
         if not name:
             return ""
         
         base_name = name.strip()
+        
+        # 「属の1種」パターンを統一（表示用）
+        genus_patterns = [
+            (r'属の[1一]種.*$', '属の1種'),     # 統一表記に変換
+            (r'属の仲間.*$', '属の仲間'),
+            (r'の[1一]種.*$', 'の1種'),
+            (r'の仲間.*$', 'の仲間'),
+            (r'\s*sp\.?\d*$', ' sp.'),          # sp表記を統一
+            (r'\s*spp\.$', ' spp.'),
+            (r'\s*cf\.\s*', ''),
+            (r'\s*aff\.\s*', ''),
+            (r'種群.*$', '種群'),
+            (r'複合種.*$', '複合種'),
+            (r'未記載種.*$', '未記載種'),
+            (r'未同定種.*$', '未同定種'),
+        ]
+        
+        # パターンマッチして統一表記に変換
+        for pattern, replacement in genus_patterns:
+            if re.search(pattern, base_name, flags=re.IGNORECASE):
+                base_name = re.sub(pattern, replacement, base_name, flags=re.IGNORECASE)
+                break  # 最初にマッチしたパターンで処理を終了
         
         # バリエーションパターンを除去
         for pattern in self.variation_patterns:
@@ -365,7 +416,7 @@ class MarineDataClassifier:
 
     def save_classified_data(self, output_dir: str = None):
         """
-        分類されたデータを保存
+        分類されたデータを保存（id と name のみ）
         """
         if not output_dir:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -381,15 +432,103 @@ class MarineDataClassifier:
         unique_sea_slug = self.remove_duplicates(self.sea_slug_data)
         unique_crustacean = self.remove_duplicates(self.crustacean_data)
         
-        # IDを再割り当て
-        for i, item in enumerate(unique_fish, 1):
-            item['id'] = i
+        # id と name のみを抽出してリスト作成
+        def extract_id_name(data_list):
+            """id と name のみを抽出"""
+            cleaned_data = []
+            for i, item in enumerate(data_list, 1):
+                cleaned_item = {
+                    'id': i,
+                    'name': item.get('name', '')
+                }
+                cleaned_data.append(cleaned_item)
+            return cleaned_data
         
-        for i, item in enumerate(unique_sea_slug, 1):
-            item['id'] = i
+        # 各カテゴリーのデータをクリーンアップ
+        unique_fish = extract_id_name(unique_fish)
+        unique_sea_slug = extract_id_name(unique_sea_slug)
+        unique_crustacean = extract_id_name(unique_crustacean)
         
-        for i, item in enumerate(unique_crustacean, 1):
-            item['id'] = i
+        # 統計を更新
+        self.stats['fish_count'] = len(unique_fish)
+        self.stats['sea_slug_count'] = len(unique_sea_slug)
+        self.stats['crustacean_count'] = len(unique_crustacean)
+        
+        print("データを保存中...")
+        
+        # 1. 魚類データ
+        fish_file = os.path.join(output_dir, "fish_data.json")
+        with open(fish_file, 'w', encoding='utf-8') as f:
+            json.dump(unique_fish, f, ensure_ascii=False, indent=2)
+        print(f"✓ 魚類データ保存: {fish_file} ({len(unique_fish)}種)")
+        
+        # 2. ウミウシデータ
+        sea_slug_file = os.path.join(output_dir, "sea_slug_data.json")
+        with open(sea_slug_file, 'w', encoding='utf-8') as f:
+            json.dump(unique_sea_slug, f, ensure_ascii=False, indent=2)
+        print(f"✓ ウミウシデータ保存: {sea_slug_file} ({len(unique_sea_slug)}種)")
+        
+        # 3. エビ・カニ・その他データ
+        crustacean_file = os.path.join(output_dir, "crustacean_other_data.json")
+        with open(crustacean_file, 'w', encoding='utf-8') as f:
+            json.dump(unique_crustacean, f, ensure_ascii=False, indent=2)
+        print(f"✓ エビ・カニ・その他データ保存: {crustacean_file} ({len(unique_crustacean)}種)")
+        
+        # 4. 統計レポート
+        report_file = os.path.join(output_dir, "classification_report.txt")
+        with open(report_file, 'w', encoding='utf-8') as f:
+            f.write("="*60 + "\n")
+            f.write("海洋生物データ分類レポート\n")
+            f.write("="*60 + "\n\n")
+            f.write(f"処理日時: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            f.write(f"処理ファイル数: {self.stats['total_files']}\n")
+            f.write(f"総レコード数: {self.stats['total_records']}\n")
+            f.write(f"重複除去数: {self.stats['duplicates_removed']}\n")
+            f.write(f"バリエーション統合数: {self.stats['variations_merged']}\n")
+            f.write(f"分類不能数: {self.stats['unclassified']}\n\n")
+            f.write("分類結果:\n")
+            f.write("-"*40 + "\n")
+            f.write(f"魚類: {self.stats['fish_count']}種\n")
+            f.write(f"ウミウシ: {self.stats['sea_slug_count']}種\n")
+            f.write(f"エビ・カニ・その他: {self.stats['crustacean_count']}種\n")
+            f.write(f"合計: {self.stats['fish_count'] + self.stats['sea_slug_count'] + self.stats['crustacean_count']}種\n")
+        
+        print(f"✓ レポート保存: {report_file}")
+        
+        return output_dir
+
+        """
+        分類されたデータを保存（familyフィールドを除外）
+        """
+        if not output_dir:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            output_dir = f"classified_data_{timestamp}"
+        
+        os.makedirs(output_dir, exist_ok=True)
+        
+        print("\n" + "="*60)
+        print("バリエーションを統合し、重複を除去中...")
+        
+        # 重複除去とバリエーション統合
+        unique_fish = self.remove_duplicates(self.fish_data)
+        unique_sea_slug = self.remove_duplicates(self.sea_slug_data)
+        unique_crustacean = self.remove_duplicates(self.crustacean_data)
+        
+        # familyフィールドを除外してIDを再割り当て
+        def clean_and_reindex(data_list):
+            """familyフィールドを除外し、IDを再割り当て"""
+            cleaned_data = []
+            for i, item in enumerate(data_list, 1):
+                # familyフィールドを除外した新しい辞書を作成
+                cleaned_item = {k: v for k, v in item.items() if k != 'family'}
+                cleaned_item['id'] = i
+                cleaned_data.append(cleaned_item)
+            return cleaned_data
+        
+        # 各カテゴリーのデータをクリーンアップ
+        unique_fish = clean_and_reindex(unique_fish)
+        unique_sea_slug = clean_and_reindex(unique_sea_slug)
+        unique_crustacean = clean_and_reindex(unique_crustacean)
         
         # 統計を更新
         self.stats['fish_count'] = len(unique_fish)
