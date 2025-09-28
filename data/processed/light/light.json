@@ -1,0 +1,186 @@
+[
+    {
+    "name": "LE330h",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LE350",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LE600h-S",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LE600h-W",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LE700-S",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LE700-W",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LF650h-N",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LF800-N",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LF1000-S",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LF1100h-EWf",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LF1300-EWf",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LF1400-S",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LF2400h-EW",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LF2700-W",
+    "manufacturer": "INON"
+    },
+    {
+    "name": "LF3100-EW",
+    "manufacturer": "INON"
+    },
+    {
+        "name": "S5",
+        "manufacturer": "RGBlue"
+    },
+    {
+        "name": "SYSTEM01:re Single Light SUPER-NATURAL COLOR",
+        "manufacturer": "RGBlue"
+    },
+    {
+        "name": "SYSTEM01:re Single Light Premium Color",
+        "manufacturer": "RGBlue"
+    },
+    {
+        "name": "SYSTEM02:re Single Light SUPER-NATURAL COLOR",
+        "manufacturer": "RGBlue"
+    },
+    {
+        "name": "SYSTEM02:re Single Light Premium Color",
+        "manufacturer": "RGBlue"
+    },
+    {
+        "name": "SYSTEM01:re Twin Light SUPER-NATURAL COLOR",
+        "manufacturer": "RGBlue"
+    },
+    {
+        "name": "SYSTEM01:re Twin Light Module PREMIUM COLOR",
+        "manufacturer": "RGBlue"
+    },
+    {
+        "name": "SYSTEM02:re Twin Light SUPER-NATURAL COLOR",
+        "manufacturer": "RGBlue"
+    },
+    {
+        "name": "SYSTEM02:re Twin Light Module PREMIUM COLOR",
+        "manufacturer": "RGBlue"
+    },
+    {
+        "name": "SYSTEM01:re Spot Beam",
+        "manufacturer": "RGBlue"
+    },
+    {
+        "name": "SYSTEM02:re Spot Beam",
+        "manufacturer": "RGBlue"
+    },
+    {
+        "name": "LX-1200SW FS",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "LX-2400SW FS",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "FIX NEO 1500 DX SW II",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "LX-4000SW FS",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "FIX NEO Premium 4030 EF II",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "FIX NEO Premium 1500DX SWRII FS",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "FIX NEO Premium 3000DX SWRII FS",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "FIX リングライト 1500",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "FIXリングディフューザーTG",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "FIX リングライト 1500",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "FIX リングライト 1000",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "FIX AQUAVOLT 7000α",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "FIX AQUAVOLT 5000Mini",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "WF SmartFocus 1200FR 2025II",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "Weefine WF Smart Focus 2600",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "Weefine WF Smart Focus 1000",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "Weefine WF Ring Light 3018",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "Weefine WF Solar Flare 12000",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "Weefine WF Solar Flare 13000PRO",
+        "manufacturer": "Fisheye"
+    },
+    {
+        "name": "Weefine WF Solar Flare 7000S",
+        "manufacturer": "Fisheye"
+    }
+]

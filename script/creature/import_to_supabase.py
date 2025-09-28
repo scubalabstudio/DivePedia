@@ -1,176 +1,319 @@
-# import_to_supabase.py
-
 import json
+import sys
 import os
-from supabase import create_client, Client
-from typing import List, Dict
+from pathlib import Path
 
-# Supabaseの設定
-SUPABASE_URL = "https://ihyksziopqzyalrznfqr.supabase.co"
-SUPABASE_KEY = os.environ.get('SUPABASE_SERVICE_KEY')
+# プロジェクトルートをパスに追加（2階層上がる）
+project_root = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(project_root))
 
-if not SUPABASE_KEY:
-    print("エラー: SUPABASE_SERVICE_KEY環境変数が設定されていません")
-    print("実行方法: export SUPABASE_SERVICE_KEY='your-service-role-key-here'")
-    exit(1)
+# デバッグ用：パスを確認
+print(f"📁 Project root: {project_root}")
+print(f"📁 Config path exists: {(project_root / 'config').exists()}")
 
-def load_json_data(file_path: str) -> List[Dict]:
-    """JSONファイルからデータを読み込む"""
+# config.supabaseからインポート
+try:
+    from config.supabase import get_client, test_connection
+    print("✅ config.supabase モジュールのインポート成功")
+except ImportError as e:
+    print(f"❌ config.supabase モジュールのインポート失敗: {e}")
+    print(f"   現在のPythonパス: {sys.path}")
+    sys.exit(1)
+
+def import_creatures(json_file_path, mode='append'):
+    """生き物データをSupabaseにインポート
+    
+    Args:
+        json_file_path: JSONファイルのパス
+        mode: 'append' (追加のみ), 'update' (更新), 'replace' (置換)
+    """
+    print("📚 JSONファイルを読み込み中...")
+    with open(json_file_path, 'r', encoding='utf-8') as f:
+        creatures = json.load(f)
+    print(f"📊 {len(creatures)}件のデータを検出")
+    
+    # 接続テスト
+    if not test_connection():
+        print("❌ Supabaseへの接続に失敗しました")
+        return 0
+    
+    # Supabaseクライアント取得
+    supabase = get_client()
+    
+    # 既存データを取得（重複チェック用）
+    print("🔍 既存データを確認中...")
     try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        print(f"✅ {file_path} を読み込みました: {len(data)}件")
-        return data
-    except FileNotFoundError:
-        print(f"⚠️ {file_path} が見つかりません")
-        return []
-    except json.JSONDecodeError as e:
-        print(f"❌ {file_path} のJSON解析エラー: {e}")
-        return []
-
-def prepare_creatures_data():
-    """データを統一フォーマットに変換"""
-    creatures = []
-    
-    # 魚類データ
-    fish_data = load_json_data('fish_data.json')
-    for item in fish_data:
-        creatures.append({
-            'name': item['name'],
-            'category': 'fish',
-            'original_id': item.get('id', None)
-        })
-    
-    # ウミウシデータ
-    sea_slug_data = load_json_data('sea_slug_data.json')
-    for item in sea_slug_data:
-        creatures.append({
-            'name': item['name'],
-            'category': 'sea_slug',
-            'original_id': item.get('id', None)
-        })
-    
-    # エビ・カニ・その他データ
-    crustacean_data = load_json_data('crustacean_other_data.json')
-    for item in crustacean_data:
-        creatures.append({
-            'name': item['name'],
-            'category': 'crustacean',
-            'original_id': item.get('id', None)
-        })
-    
-    return creatures
-
-def import_to_supabase():
-    """Supabaseにデータをインポート"""
-    
-    print("\n🚀 Supabaseへのインポートを開始します...")
-    
-    # Supabaseクライアントを作成
-    try:
-        supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
-        print("✅ Supabaseに接続しました")
+        existing_data = supabase.table('creatures').select('*').execute()
+        existing_creatures = existing_data.data if existing_data.data else []
     except Exception as e:
-        print(f"❌ Supabase接続エラー: {e}")
-        return
+        print(f"⚠️ 既存データ取得エラー: {e}")
+        existing_creatures = []
     
-    # データを準備
-    creatures = prepare_creatures_data()
+    # 既存データのキーを作成（name + categoryで識別）
+    existing_keys = set()
+    existing_dict = {}
+    for creature in existing_creatures:
+        # name + categoryで一意性を判定
+        key = f"{creature.get('name')}:{creature.get('category', 'unknown')}"
+        existing_keys.add(key)
+        existing_dict[key] = creature
     
-    if not creatures:
-        print("❌ インポートするデータがありません")
-        return
+    print(f"📂 既存データ: {len(existing_creatures)}件")
     
-    print(f"\n📊 データ統計:")
-    print(f"  合計: {len(creatures)}件")
-    
-    # カテゴリー別の件数を表示
-    categories = {}
-    for creature in creatures:
-        cat = creature['category']
-        categories[cat] = categories.get(cat, 0) + 1
-    
-    for cat, count in categories.items():
-        cat_name = {
-            'fish': '魚類',
-            'sea_slug': 'ウミウシ',
-            'crustacean': 'エビ・カニ・その他'
-        }.get(cat, cat)
-        print(f"  {cat_name}: {count}件")
-    
-    # 既存データをクリア
-    try:
-        print("\n🗑️ 既存データをクリア中...")
-        result = supabase.table('creatures').delete().neq('id', 0).execute()
-        print("✅ 既存データをクリアしました")
-    except Exception as e:
-        print(f"⚠️ クリア時の警告（続行します）: {e}")
-    
-    # バッチサイズを設定（一度に挿入するレコード数）
-    batch_size = 500
-    success_count = 0
-    error_count = 0
-    
-    # データをバッチで挿入
-    print("\n📥 データをインポート中...")
-    for i in range(0, len(creatures), batch_size):
-        batch = creatures[i:i + batch_size]
-        batch_end = min(i + batch_size, len(creatures))
-        
+    # モードに応じた処理
+    if mode == 'replace':
+        print("🗑️ 既存データをクリア中...")
         try:
-            result = supabase.table('creatures').insert(batch).execute()
-            success_count += len(batch)
-            print(f"  ✅ {i + 1} - {batch_end} / {len(creatures)} 完了")
+            supabase.table('creatures').delete().neq('id', 0).execute()
+            existing_keys.clear()
+            existing_dict.clear()
+            print("✅ 既存データをクリアしました")
         except Exception as e:
-            error_count += len(batch)
-            print(f"  ❌ {i + 1} - {batch_end} / {len(creatures)} エラー: {e}")
-            # エラーが発生しても続行
+            print(f"⚠️ クリア時のエラー: {e}")
+    
+    # データ整形と重複チェック
+    formatted_creatures = []
+    skipped_count = 0
+    duplicate_count = 0
+    duplicates = []
+    
+    for creature in creatures:
+        # nameがない場合はスキップ
+        if not creature.get('name'):
+            skipped_count += 1
+            print(f"  ⚠️ スキップ: 名前がありません")
             continue
-    
-    # インポート結果を確認
-    print("\n📊 インポート結果:")
-    print(f"  成功: {success_count}件")
-    print(f"  失敗: {error_count}件")
-    
-    try:
-        # 総件数を確認
-        count_result = supabase.table('creatures').select('*', count='exact').execute()
-        print(f"\n✅ データベース内の総レコード数: {count_result.count}件")
         
-        # カテゴリー別の件数を確認
-        print("\n📊 カテゴリー別件数（DB内）:")
-        for category in ['fish', 'sea_slug', 'crustacean']:
-            result = supabase.table('creatures').select('*', count='exact').eq('category', category).execute()
-            category_name = {
+        # カテゴリーを判定（データ構造に応じて調整）
+        category = creature.get('category', 'unknown')
+        if not category:
+            # カテゴリーがない場合、他のフィールドから推測
+            if 'fish' in str(creature).lower():
+                category = 'fish'
+            elif 'slug' in str(creature).lower() or 'ウミウシ' in creature.get('name', ''):
+                category = 'sea_slug'
+            elif 'crab' in str(creature).lower() or 'shrimp' in str(creature).lower() or 'エビ' in creature.get('name', '') or 'カニ' in creature.get('name', ''):
+                category = 'crustacean'
+            else:
+                category = 'other'
+        
+        # データ整形
+        formatted_creature = {
+            'name': creature.get('name'),
+            'category': category,
+            'original_id': creature.get('id') or creature.get('original_id'),
+            'description': creature.get('description'),
+            'scientific_name': creature.get('scientific_name'),
+            'habitat': creature.get('habitat')
+        }
+        
+        # Noneの値を除去
+        formatted_creature = {k: v for k, v in formatted_creature.items() if v is not None}
+        
+        # 重複チェック用のキーを生成
+        key = f"{formatted_creature['name']}:{formatted_creature.get('category', 'unknown')}"
+        
+        # 重複チェック
+        if key in existing_keys and mode != 'replace':
+            duplicate_count += 1
+            duplicates.append(formatted_creature)
+            if duplicate_count <= 5:  # 最初の5件だけ表示
+                print(f"  ⏭️ 重複スキップ: {formatted_creature['name']} ({formatted_creature.get('category', 'unknown')})")
+        else:
+            # 新規データ
+            formatted_creatures.append(formatted_creature)
+    
+    print(f"\n📝 インポート対象: {len(formatted_creatures)}件（新規）")
+    print(f"⏭️ 重複スキップ: {duplicate_count}件")
+    print(f"⚠️ データ不備スキップ: {skipped_count}件\n")
+    
+    # カテゴリー別の統計
+    if formatted_creatures:
+        category_stats = {}
+        for creature in formatted_creatures:
+            cat = creature.get('category', 'unknown')
+            category_stats[cat] = category_stats.get(cat, 0) + 1
+        
+        print("📊 カテゴリー別内訳（新規）:")
+        for cat, count in sorted(category_stats.items()):
+            cat_name = {
                 'fish': '魚類',
                 'sea_slug': 'ウミウシ',
-                'crustacean': 'エビ・カニ・その他'
-            }[category]
-            print(f"  {category_name}: {result.count}件")
-    except Exception as e:
-        print(f"⚠️ 件数確認時のエラー: {e}")
+                'crustacean': 'エビ・カニ',
+                'other': 'その他',
+                'unknown': '不明'
+            }.get(cat, cat)
+            print(f"  {cat_name}: {count}件")
     
-    print("\n✨ インポート処理が完了しました！")
+    # バッチ処理でインポート
+    batch_size = 500
+    total_imported = 0
+    failed_batches = []
+    
+    if formatted_creatures:
+        print("\n🚀 データをインポート中...")
+        for i in range(0, len(formatted_creatures), batch_size):
+            batch = formatted_creatures[i:i + batch_size]
+            try:
+                result = supabase.table('creatures').insert(batch).execute()
+                total_imported += len(batch)
+                print(f"✅ {total_imported}/{len(formatted_creatures)} 件インポート完了")
+            except Exception as e:
+                print(f"❌ エラー: {e}")
+                failed_batches.append({
+                    'range': f"{i}〜{i + len(batch)}",
+                    'error': str(e),
+                    'data': batch
+                })
+    
+    # 結果サマリー
+    print("\n" + "="*50)
+    print("📊 インポート結果サマリー")
+    print("="*50)
+    print(f"✅ 新規追加: {total_imported}件")
+    print(f"⏭️ 重複スキップ: {duplicate_count}件")
+    print(f"❌ 失敗: {len(formatted_creatures) - total_imported}件")
+    print(f"⚠️ データ不備: {skipped_count}件")
+    
+    if failed_batches:
+        print("\n❌ 失敗したバッチ:")
+        for batch in failed_batches[:5]:  # 最初の5件だけ表示
+            print(f"  - {batch['range']}: {batch['error']}")
+    
+    return total_imported
 
-if __name__ == "__main__":
-    # ファイルの存在確認
-    print("📁 ファイルチェック:")
-    files = ['fish_data.json', 'sea_slug_data.json', 'crustacean_other_data.json']
-    all_exist = True
+def verify_import():
+    """インポート結果を確認"""
+    supabase = get_client()
     
-    for file in files:
-        if os.path.exists(file):
-            print(f"  ✅ {file} が存在します")
+    try:
+        # 全件数を確認
+        result = supabase.table('creatures').select('*', count='exact').execute()
+        print(f"\n✅ 総登録数: {result.count}件")
+        
+        # カテゴリー別に確認
+        print("\n📊 カテゴリー別件数:")
+        for category in ['fish', 'sea_slug', 'crustacean', 'other', 'unknown']:
+            result = supabase.table('creatures').select('*', count='exact').eq('category', category).execute()
+            if result.count > 0:
+                category_name = {
+                    'fish': '魚類',
+                    'sea_slug': 'ウミウシ',
+                    'crustacean': 'エビ・カニ',
+                    'other': 'その他',
+                    'unknown': '不明'
+                }.get(category, category)
+                print(f"  {category_name}: {result.count}件")
+        
+        # サンプルデータを表示
+        sample_result = supabase.table('creatures').select('name, category').limit(5).execute()
+        if sample_result.data:
+            print("\n📋 サンプルデータ（最初の5件）:")
+            for creature in sample_result.data:
+                cat_name = {
+                    'fish': '魚類',
+                    'sea_slug': 'ウミウシ',
+                    'crustacean': 'エビ・カニ',
+                    'other': 'その他',
+                    'unknown': '不明'
+                }.get(creature.get('category', 'unknown'), creature.get('category', 'unknown'))
+                print(f"  - {creature['name']} ({cat_name})")
+                
+    except Exception as e:
+        print(f"❌ 確認時のエラー: {e}")
+
+def check_duplicates(json_file_path):
+    """重複チェックのみ実行"""
+    print("🔍 重複チェックモード\n")
+    
+    # JSONファイルを読み込み
+    with open(json_file_path, 'r', encoding='utf-8') as f:
+        creatures = json.load(f)
+    
+    print(f"📊 チェック対象: {len(creatures)}件")
+    
+    # Supabaseクライアント取得
+    supabase = get_client()
+    
+    # 既存データを取得
+    try:
+        existing_data = supabase.table('creatures').select('*').execute()
+        existing_creatures = existing_data.data if existing_data.data else []
+    except Exception as e:
+        print(f"❌ 既存データ取得エラー: {e}")
+        return
+    
+    print(f"📂 既存データ: {len(existing_creatures)}件")
+    
+    # 既存データのキーを作成
+    existing_keys = {}
+    for creature in existing_creatures:
+        key = f"{creature.get('name')}:{creature.get('category', 'unknown')}"
+        existing_keys[key] = creature
+    
+    # 重複チェック
+    duplicates = []
+    new_creatures = []
+    
+    for creature in creatures:
+        if not creature.get('name'):
+            continue
+        
+        category = creature.get('category', 'unknown')
+        key = f"{creature.get('name')}:{category}"
+        
+        if key in existing_keys:
+            duplicates.append(creature)
         else:
-            print(f"  ❌ {file} が見つかりません")
-            all_exist = False
+            new_creatures.append(creature)
     
-    if not all_exist:
-        print("\n⚠️ 必要なファイルが揃っていません")
-        print("以下のファイルが必要です:")
-        for file in files:
-            print(f"  - {file}")
-        exit(1)
+    print(f"\n📊 チェック結果:")
+    print(f"  ✨ 新規追加可能: {len(new_creatures)}件")
+    print(f"  ⏭️ 重複: {len(duplicates)}件")
+    
+    if duplicates and len(duplicates) <= 10:
+        print("\n📋 重複データ詳細（最初の10件）:")
+        for dup in duplicates[:10]:
+            print(f"  - {dup.get('name')} ({dup.get('category', 'unknown')})")
+
+def main():
+    """メイン処理"""
+    if len(sys.argv) < 2:
+        print("使用方法: python import_to_supabase.py <JSONファイルパス> [オプション]")
+        print("\nオプション:")
+        print("  --check   : 重複チェックのみ")
+        print("  --replace : 既存データを削除して置換")
+        print("  --update  : 既存データは更新、新規は追加")
+        print("\n例:")
+        print("  python import_to_supabase.py data/creatures.json")
+        print("  python import_to_supabase.py data/creatures.json --check")
+        sys.exit(1)
+    
+    json_file = sys.argv[1]
+    
+    # ファイル存在確認
+    if not os.path.exists(json_file):
+        print(f"❌ ファイルが見つかりません: {json_file}")
+        sys.exit(1)
+    
+    # オプション処理
+    mode = 'append'
+    if len(sys.argv) > 2:
+        if sys.argv[2] == '--check':
+            check_duplicates(json_file)
+            return
+        elif sys.argv[2] == '--replace':
+            mode = 'replace'
+        elif sys.argv[2] == '--update':
+            mode = 'update'
     
     # インポート実行
-    import_to_supabase()
+    print(f"📝 モード: {mode}")
+    imported = import_creatures(json_file, mode)
+    
+    # 結果確認
+    if imported > 0 or mode == 'replace':
+        verify_import()
+
+if __name__ == "__main__":
+    main()
