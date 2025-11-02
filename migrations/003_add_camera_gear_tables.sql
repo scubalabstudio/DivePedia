@@ -64,6 +64,7 @@ CREATE TABLE system_charts (
     adapter_id INTEGER REFERENCES adapters(id),
     extension1_id INTEGER REFERENCES extensions(id),
     extension2_id INTEGER REFERENCES extensions(id),
+    extension3_id INTEGER REFERENCES extensions(id),
     port_id INTEGER REFERENCES ports(id),
     notes TEXT,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,

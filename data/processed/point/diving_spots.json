@@ -16,6 +16,10 @@
     "prefecture": "三重県"
   },
   {
+    "name": "方座浦",
+    "prefecture": "三重県"
+  },
+  {
     "name": "梶賀",
     "prefecture": "三重県"
   },
@@ -45,6 +49,10 @@
   },
   {
     "name": "ウトロ",
+    "prefecture": "北海道"
+  },
+  {
+    "name": "ローソク岩",
     "prefecture": "北海道"
   },
   {
@@ -80,6 +88,10 @@
     "prefecture": "北海道"
   },
   {
+    "name": "積丹美国",
+    "prefecture": "北海道"
+  },
+  {
     "name": "羅臼",
     "prefecture": "北海道"
   },
@@ -96,6 +108,10 @@
     "prefecture": "北海道"
   },
   {
+    "name": "伊戸",
+    "prefecture": "千葉県"
+  },
+  {
     "name": "勝浦",
     "prefecture": "千葉県"
   },
@@ -105,6 +121,10 @@
   },
   {
     "name": "行川",
+    "prefecture": "千葉県"
+  },
+  {
+    "name": "西川名",
     "prefecture": "千葉県"
   },
   {
@@ -128,6 +148,10 @@
     "prefecture": "和歌山県"
   },
   {
+    "name": "南紀串本",
+    "prefecture": "和歌山県"
+  },
+  {
     "name": "南紀白浜",
     "prefecture": "和歌山県"
   },
@@ -145,6 +169,10 @@
   },
   {
     "name": "白崎",
+    "prefecture": "和歌山県"
+  },
+  {
+    "name": "白崎（由良町）",
     "prefecture": "和歌山県"
   },
   {
@@ -180,7 +208,23 @@
     "prefecture": "宮城県"
   },
   {
+    "name": "南郷",
+    "prefecture": "宮崎県"
+  },
+  {
+    "name": "延岡",
+    "prefecture": "宮崎県"
+  },
+  {
+    "name": "越中宮崎",
+    "prefecture": "富山県"
+  },
+  {
     "name": "周防大島",
+    "prefecture": "山口県"
+  },
+  {
+    "name": "山口県瀬戸内海",
     "prefecture": "山口県"
   },
   {
@@ -216,6 +260,10 @@
     "prefecture": "山口県"
   },
   {
+    "name": "庄内",
+    "prefecture": "山形県"
+  },
+  {
     "name": "鼠ヶ関",
     "prefecture": "山形県"
   },
@@ -232,6 +280,10 @@
     "prefecture": "岩手県"
   },
   {
+    "name": "島根大田",
+    "prefecture": "島根県"
+  },
+  {
     "name": "宍喰",
     "prefecture": "徳島県"
   },
@@ -244,11 +296,19 @@
     "prefecture": "徳島県"
   },
   {
+    "name": "佐渡ヶ島",
+    "prefecture": "新潟県"
+  },
+  {
     "name": "佐渡島",
     "prefecture": "新潟県"
   },
   {
     "name": "柏崎",
+    "prefecture": "新潟県"
+  },
+  {
+    "name": "柏崎/番神",
     "prefecture": "新潟県"
   },
   {
@@ -276,7 +336,19 @@
     "prefecture": "東京都"
   },
   {
+    "name": "大島",
+    "prefecture": "東京都"
+  },
+  {
     "name": "孀婦岩",
+    "prefecture": "東京都"
+  },
+  {
+    "name": "小笠原（母島）",
+    "prefecture": "東京都"
+  },
+  {
+    "name": "小笠原（父島）",
     "prefecture": "東京都"
   },
   {
@@ -344,6 +416,10 @@
     "prefecture": "沖縄県"
   },
   {
+    "name": "南部＆チービシ諸島",
+    "prefecture": "沖縄県"
+  },
+  {
     "name": "古宇利島",
     "prefecture": "沖縄県"
   },
@@ -356,6 +432,10 @@
     "prefecture": "沖縄県"
   },
   {
+    "name": "嘉手納町水釜",
+    "prefecture": "沖縄県"
+  },
+  {
     "name": "多良間島",
     "prefecture": "沖縄県"
   },
@@ -365,6 +445,10 @@
   },
   {
     "name": "宜野湾",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "宮古島",
     "prefecture": "沖縄県"
   },
   {
@@ -384,7 +468,19 @@
     "prefecture": "沖縄県"
   },
   {
+    "name": "恩納村",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "慶良間（ケラマ）諸島",
+    "prefecture": "沖縄県"
+  },
+  {
     "name": "新城島",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "本部半島",
     "prefecture": "沖縄県"
   },
   {
@@ -436,11 +532,23 @@
     "prefecture": "沖縄県"
   },
   {
+    "name": "石垣島・八重山周辺",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "砂辺",
+    "prefecture": "沖縄県"
+  },
+  {
     "name": "竹富島",
     "prefecture": "沖縄県"
   },
   {
     "name": "粟国島",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "粟国島・渡名喜島",
     "prefecture": "沖縄県"
   },
   {
@@ -480,6 +588,10 @@
     "prefecture": "滋賀県"
   },
   {
+    "name": "天草",
+    "prefecture": "熊本県"
+  },
+  {
     "name": "九十九湾",
     "prefecture": "石川県"
   },
@@ -496,11 +608,47 @@
     "prefecture": "石川県"
   },
   {
+    "name": "三崎町諸磯",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "三戸浜",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "城ケ島",
+    "prefecture": "神奈川県"
+  },
+  {
     "name": "大磯",
     "prefecture": "神奈川県"
   },
   {
+    "name": "岩",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "早川",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "根府川",
+    "prefecture": "神奈川県"
+  },
+  {
     "name": "江ノ島",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "江ノ島・エボシ岩",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "江之浦",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "石橋（神奈川）",
     "prefecture": "神奈川県"
   },
   {
@@ -528,6 +676,10 @@
     "prefecture": "神奈川県"
   },
   {
+    "name": "鎌倉沖",
+    "prefecture": "神奈川県"
+  },
+  {
     "name": "敦賀",
     "prefecture": "福井県"
   },
@@ -548,6 +700,10 @@
     "prefecture": "福岡県"
   },
   {
+    "name": "恋の浦",
+    "prefecture": "福岡県"
+  },
+  {
     "name": "沖ノ島（福岡）",
     "prefecture": "福岡県"
   },
@@ -561,6 +717,10 @@
   },
   {
     "name": "糸島",
+    "prefecture": "福岡県"
+  },
+  {
+    "name": "糸島・玄界灘",
     "prefecture": "福岡県"
   },
   {
@@ -596,6 +756,14 @@
     "prefecture": "長崎県"
   },
   {
+    "name": "五島列島・上五島",
+    "prefecture": "長崎県"
+  },
+  {
+    "name": "五島列島・下五島",
+    "prefecture": "長崎県"
+  },
+  {
     "name": "伊王島",
     "prefecture": "長崎県"
   },
@@ -605,6 +773,10 @@
   },
   {
     "name": "対馬",
+    "prefecture": "長崎県"
+  },
+  {
+    "name": "辰口",
     "prefecture": "長崎県"
   },
   {
@@ -696,6 +868,10 @@
     "prefecture": "静岡県"
   },
   {
+    "name": "浮島",
+    "prefecture": "静岡県"
+  },
+  {
     "name": "浮島・堂ヶ島",
     "prefecture": "静岡県"
   },
@@ -708,11 +884,15 @@
     "prefecture": "静岡県"
   },
   {
+    "name": "獅子浜",
+    "prefecture": "静岡県"
+  },
+  {
     "name": "田子",
     "prefecture": "静岡県"
   },
   {
-    "name": "石橋",
+    "name": "石橋（静岡）",
     "prefecture": "静岡県"
   },
   {
@@ -725,6 +905,14 @@
   },
   {
     "name": "網代",
+    "prefecture": "静岡県"
+  },
+  {
+    "name": "菖蒲沢",
+    "prefecture": "静岡県"
+  },
+  {
+    "name": "谷津",
     "prefecture": "静岡県"
   },
   {
@@ -742,6 +930,14 @@
   {
     "name": "黄金崎・安良里",
     "prefecture": "静岡県"
+  },
+  {
+    "name": "うぐる島・沖ノ島",
+    "prefecture": "高知県"
+  },
+  {
+    "name": "大月・柏島",
+    "prefecture": "高知県"
   },
   {
     "name": "室戸",
@@ -764,11 +960,19 @@
     "prefecture": "高知県"
   },
   {
+    "name": "竜串・足摺",
+    "prefecture": "高知県"
+  },
+  {
     "name": "足摺岬",
     "prefecture": "高知県"
   },
   {
     "name": "トカラ列島",
+    "prefecture": "鹿児島県"
+  },
+  {
+    "name": "トカラ列島・口之島",
     "prefecture": "鹿児島県"
   },
   {
@@ -800,6 +1004,10 @@
     "prefecture": "鹿児島県"
   },
   {
+    "name": "奄美大島・北部",
+    "prefecture": "鹿児島県"
+  },
+  {
     "name": "宝島",
     "prefecture": "鹿児島県"
   },
@@ -817,6 +1025,14 @@
   },
   {
     "name": "枕崎",
+    "prefecture": "鹿児島県"
+  },
+  {
+    "name": "枕崎・坊津",
+    "prefecture": "鹿児島県"
+  },
+  {
+    "name": "桜島",
     "prefecture": "鹿児島県"
   },
   {

@@ -1,0 +1,349 @@
+[
+  {
+    "lens": "Fujinon GF120mm F4 R LM OIS WR Macro",
+    "housing": [
+      "GFX100II","GFX100S","GFX100","GFX50S"
+    ],
+    "gear": "NA-GF120-F",
+    "port_combinations": [
+      {
+        "port": "NAマクロポート N60G",
+        "adapter": null,
+        "extension1": "NAエクステンションリング60",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NAマクロポート N60G",
+        "adapter": null,
+        "extension1": "NAエクステンションリング60II",
+        "extension2": null,
+        "extension3": null
+      }
+    ]
+  },
+  {
+    "lens": "Fujinon GF120mm F4 R LM OIS WR Macro + HOYA +2 Diopter クローズアップレンズ",
+    "housing": [
+      "GFX100II","GFX100S","GFX100","GFX50S"
+    ],
+    "gear": "NA-GF120-F",
+    "port_combinations": [
+      {
+        "port": "NAマクロポート N60G",
+        "adapter": null,
+        "extension1": "NAエクステンションリング70",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NAマクロポート N60G",
+        "adapter": null,
+        "extension1": "NAエクステンションリング70IIK",
+        "extension2": null,
+        "extension3": null
+      }
+    ]
+  },
+  {
+    "lens": "Laowa 17mm F4 GFX Zero-D",
+    "housing": [
+      "GFX100II","GFX100S","GFX100","GFX50S"
+    ],
+    "gear": "NA-GL17-A & NA-GL17-F",
+    "port_combinations": [
+      {
+        "port": "NAワイドアングルコンバージョンポート2 X0.57",
+        "adapter": null,
+        "extension1": "NAエクステンションリング35MF",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NAワイドアングルコンバージョンポート2 X0.57",
+        "adapter": null,
+        "extension1": "NAエクステンションリング35IIK",
+        "extension2": "NAフォーカスノブII",
+        "extension3": null
+      },
+      {
+        "port": "NA 250ガラスワイドポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング35",
+        "extension2": "NAエクステンションリング40",
+        "extension3": null
+      },
+      {
+        "port": "NA 250ガラスワイドポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング35IIK",
+        "extension2": "NAエクステンションリング40IIK",
+        "extension3": null
+      },
+      {
+        "port": "NA 230ガラスドームポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング35",
+        "extension2": "NAエクステンションリング50",
+        "extension3": null
+      },
+      {
+        "port": "NA 230ガラスドームポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング35IIK",
+        "extension2": "NAエクステンションリング50IIK",
+        "extension3": null
+      }
+    ]
+  },
+  {
+    "lens": "Fujinon GF63mm F2.8 R WR",
+    "housing": [
+      "GFX100II","GFX100S","GFX100","GFX50S"
+    ],
+    "gear": null,
+    "port_combinations": [
+      {
+        "port": "NAマクロポート N60G",
+        "adapter": null,
+        "extension1": null,
+        "extension2": null,
+        "extension3": null
+      }
+    ]
+  },
+  {
+    "lens": "Fujifilm GF 35-70mm f/4.5-5.6 WR",
+    "housing": [
+      "GFX100II","GFX100S","GFX100","GFX50S"
+    ],
+    "gear": "NA-GF3570-Z",
+    "port_combinations": [
+      {
+        "port": "NA 200ドームポート",
+        "adapter": null,
+        "extension1": "NAエクステンションリング70",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 180ガラスドームポート",
+        "adapter": null,
+        "extension1": "NAエクステンションリング70",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 230ガラスドームポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング70",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 200ドームポート",
+        "adapter": null,
+        "extension1": "NAエクステンションリング70IIK",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 180ガラスドームポート",
+        "adapter": null,
+        "extension1": "NAエクステンションリング70IIK",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 230ガラスドームポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング70IIK",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 250ガラスワイドポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング80",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 250ガラスワイドポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング80II",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA N120/N100ワイドアングルコンバージョンポート×0.36(WACP-1B)",
+        "adapter": null,
+        "extension1": "NAエクステンションリング40",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA N120/N100ワイドアングルコンバージョンポート×0.36(WACP-1B)",
+        "adapter": null,
+        "extension1": "NAエクステンションリング40IIK",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA N120/N100フィッシュアイコンバージョンポート(FCP-1)",
+        "adapter": null,
+        "extension1": "NAエクステンションリング50IIK",
+        "extension2": null,
+        "extension3": null
+      }
+    ]
+  },
+  {
+    "lens": "Fujifilm GF 20-35mm F4 R WR",
+    "housing": [
+      "GFX100II","GFX100S","GFX100","GFX50S"
+    ],
+    "gear": "NA-GF2035-Z",
+    "port_combinations": [
+      {
+        "port": "NA 180ガラスドームポート",
+        "adapter": null,
+        "extension1": "NAエクステンションリング70IIK",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 200ドームポート",
+        "adapter": null,
+        "extension1": "NAエクステンションリング80II",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 230ガラスドームポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング35IIK",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 250ガラスワイドポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング35IIK",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NAワイドアングルコンバージョンポート2 X0.57",
+        "adapter": null,
+        "extension1": "NAエクステンションリング35IIK",
+        "extension2": null,
+        "extension3": null
+      }
+    ]
+  },
+  {
+    "lens": "Fujinon GF23mm F4 R LM WR",
+    "housing": [
+      "GFX100II","GFX100S","GFX100","GFX50S"
+    ],
+    "gear": null,
+    "port_combinations": [
+      {
+        "port": "NAワイドアングルコンバージョンポート2 X0.57",
+        "adapter": null,
+        "extension1": "NAエクステンションリング20",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NAワイドアングルコンバージョンポート2 X0.57",
+        "adapter": null,
+        "extension1": "NAエクステンションリング20II",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 230ガラスドームポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング60",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 250ガラスワイドポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング60",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 230ガラスドームポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング60II",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA 250ガラスワイドポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング60II",
+        "extension2": null,
+        "extension3": null
+      }
+    ]
+  },
+  {
+    "lens": "Fujinon GF32-64mm F4 R LM WR",
+    "housing": [
+      "GFX100II","GFX100S","GFX100","GFX50S"
+    ],
+    "gear": "NA-GF3264-Z",
+    "port_combinations": [
+      {
+        "port": "NA 250ガラスワイドポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング60",
+        "extension2": "NAエクステンションリング40",
+        "extension3": null
+      },
+      {
+        "port": "NA 250ガラスワイドポートII",
+        "adapter": null,
+        "extension1": "NAエクステンションリング60II",
+        "extension2": "NAエクステンションリング40IIK",
+        "extension3": null
+      }
+    ]
+  },
+  {
+    "lens": "Fujinon GF45mm F2.8 R WR",
+    "housing": [
+      "GFX100II","GFX100S","GFX100","GFX50S"
+    ],
+    "gear": null,
+    "port_combinations": [
+      {
+        "port": "NA N120/N100ワイドアングルコンバージョンポート×0.36(WACP-1B)",
+        "adapter": null,
+        "extension1": "NAエクステンションリング30",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NA N120/N100ワイドアングルコンバージョンポート×0.36(WACP-1B)",
+        "adapter": null,
+        "extension1": "NAエクステンションリング30IIK",
+        "extension2": null,
+        "extension3": null
+      },
+      {
+        "port": "NAマクロポート N60G",
+        "adapter": null,
+        "extension1": null,
+        "extension2": null,
+        "extension3": null
+      }
+    ]
+  }
+]
