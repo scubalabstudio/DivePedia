@@ -28,6 +28,81 @@
     },
     {
         "name" : "UWL-09 PRO", "company" : "AOI"
+    },
+    {
+        "name": "NA ミットレンジフォーカスオプティマイザー MFO-3",
+        "company": "Nauticam"
+    },
+    {
+        "name": "NA スーパーマクロコンバージョンレンズ SMC-3",
+        "company": "Nauticam"
+    },
+    {
+        "name": "NA ミッドレンジ フォーカス オプティマイザー MFO-1",
+        "company": "Nauticam"
+    },
+    {
+        "name": "NA スーパーマクロコンバージョンレンズ SMC-2",
+        "company": "Nauticam"
+    },
+    {
+        "name": "NA コンパクトマクロコンバージョンレンズ CMC-2",
+        "company": "Nauticam"
+    },
+    {
+        "name": "NA コンパクトマクロコンバージョンレンズ CMC-1",
+        "company": "Nauticam"
+    },
+    {
+        "name": "WF マクロコンバージョンレンズ WFL03 +12",
+        "company": "Nauticam"
+    },
+    {
+        "name": "マクロメイト M52/M67",
+        "company": "Nauticam"
+    },
+    {
+        "name": "NA ワイドコンバージョンレンズ WWL-1B",
+        "company": "Nauticam"
+    },
+    {
+        "name": "NA Macro ワイドコンバージョンレンズ EMWL",
+        "company": "Nauticam"
+    },
+    {
+        "name": "NA ワイドコンバージョンレンズ WWL-C",
+        "company": "Nauticam"
+    },
+    {
+        "name": "NA Macro ワイドコンバージョンレンズ MWL-1",
+        "company": "Nauticam"
+    },
+    {
+        "name": "WF ワイドエアレンズ WFL12M67",
+        "company": "Nauticam"
+    },
+    {
+        "name": "WF ワイドエアレンズ WFL11M52",
+        "company": "Nauticam"
+    },
+    {
+        "name": "WF ワイドコンバージョンレンズ WFL07 Cell",
+        "company": "Nauticam"
+    },
+    {
+        "name": "WF ワイドコンバージョンレンズ UWL-24M52MG",
+        "company": "Nauticam"
+    },
+    {
+        "name": "WF ワイドコンバージョンレンズ UWL-24M52R",
+        "company": "Nauticam"
+    },
+    {
+        "name": "FIX フィッシュアイコンバージョンレンズ UWL-28M52MG",
+        "company": "Nauticam"
+    },
+    {
+        "name": "FIX フィッシュアイコンバージョンレンズ UWL-28M52R",
+        "company": "Nauticam"
     }
-
 ]

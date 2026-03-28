@@ -4,10 +4,16 @@ import os
 from pathlib import Path
 from typing import List, Dict, Set, Tuple
 
-# プロジェクトルートをパスに追加
-sys.path.append(str(Path(__file__).parent.parent.parent))
+from dotenv import load_dotenv
+from supabase import create_client
 
-from config.supabase import get_client
+load_dotenv(Path(__file__).parent.parent.parent / '.env')
+
+def get_client():
+    return create_client(
+        os.getenv('SUPABASE_URL'),
+        os.getenv('SUPABASE_SERVICE_ROLE_KEY')
+    )
 
 def get_existing_accessories(supabase) -> Tuple[Set[str], Dict[str, Dict]]:
     """既存のアクセサリーデータを取得

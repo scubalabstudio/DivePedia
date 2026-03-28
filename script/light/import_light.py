@@ -3,10 +3,16 @@ import sys
 import os
 from pathlib import Path
 
-# プロジェクトルートをパスに追加
-sys.path.append(str(Path(__file__).parent.parent.parent))
+from dotenv import load_dotenv
+from supabase import create_client
 
-from config.supabase import get_client
+load_dotenv(Path(__file__).parent.parent.parent / '.env')
+
+def get_client():
+    return create_client(
+        os.getenv('SUPABASE_URL'),
+        os.getenv('SUPABASE_SERVICE_ROLE_KEY')
+    )
 
 def import_lights(json_file_path):
     """ライトデータをSupabaseにインポート"""

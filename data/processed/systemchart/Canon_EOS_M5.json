@@ -1,0 +1,178 @@
+[
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF-S 60mm F2.8 Macro USM + EF-EOS M Adapter",
+    "gear": "CMEF60-F",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA EC60 マクロポート"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF-S 60mm F2.8 Macro USM + EF-EOS M Adapter",
+    "gear": "C60-F",
+    "adapter": "NA E/120マウントコンバーター41.5MF",
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA マクロポート41"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF-M 15-45mm F3.5-6.3 IS STM",
+    "gear": "CM1545-Z",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E45フラットポート"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF-M 18-55mm F3.5-5.6 IS STM",
+    "gear": "CM1855-Z",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA EC100 ワイドポート"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF-M 22mm F2 STM",
+    "gear": null,
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E90ワイドポート"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF-M 22mm F2 STM",
+    "gear": null,
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E16M67フラットポート"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF-M 11-22mm F4-5.6 IS STM",
+    "gear": "CM1122-Z",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E180 ワイドポート"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF-M 11-22mm F4-5.6 IS STM",
+    "gear": "CM1122-Z",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E150ワイドポート"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF-M 11-22mm F4-5.6 IS STM",
+    "gear": "CM1122-Z",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA EC100 ワイドポート"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF-M 11-22mm F4-5.6 IS STM",
+    "gear": "CM1122-Z",
+    "adapter": "NA E/120マウントコンバーター60",
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA 180ガラスドームポート"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF 8-15mm F4L Fisheye USM + EF-EOS M Adapter",
+    "gear": "CMEF815-Z",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA EC110 ドームポート"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF 8-15mm F4L Fisheye USM + EF-EOS M Adapter",
+    "gear": "C815-Z",
+    "adapter": "NA E/120マウントコンバーター41.5MF",
+    "extension1": "NA エクステンションリング30",
+    "extension2": null,
+    "extension3": null,
+    "port": "NA 140ガラスドームポートR"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF 8-15mm F4L Fisheye USM + EF-EOS M Adapter",
+    "gear": "C815-Z",
+    "adapter": "NA E/120マウントコンバーター41.5MF",
+    "extension1": "NA エクステンションリング30IIK",
+    "extension2": null,
+    "extension3": null,
+    "port": "NA 140ガラスドームポートR"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF 100mmf/2.8L Macro IS USM + EF-EOS M Adapter",
+    "gear": null,
+    "adapter": "NA E/120マウントコンバーター60",
+    "extension1": "NA エクステンションリング30",
+    "extension2": null,
+    "extension3": null,
+    "port": "NA マクロポート41"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF 100mmf/2.8L Macro IS USM + EF-EOS M Adapter",
+    "gear": null,
+    "adapter": "NA E/120マウントコンバーター60",
+    "extension1": "NA エクステンションリング30IIK",
+    "extension2": null,
+    "extension3": null,
+    "port": "NA マクロポート41"
+  },
+  {
+    "camera": "Canon EOS M5",
+    "housing": "NA EOSM5",
+    "lens": "EF 100mmf/2.8L Macro IS USM",
+    "gear": "C100IS-F",
+    "adapter": "NA E/120マウントコンバーター41.5MF",
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA マクロポートC100IS"
+  }
+]

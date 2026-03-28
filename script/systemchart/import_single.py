@@ -1,7 +1,48 @@
 #!/usr/bin/env python3
 """
-マスターデータを最初に一括登録してからシステムチャートを登録するスクリプト
-Usage: python3 import_master_data_first.py <json_file_path>
+ダイビング機材システムチャートをSupabaseにインポートするスクリプト
+マスターデータを最初に一括登録してからシステムチャートを登録します。
+
+【機能】
+1. JSONファイルからユニークなアイテム（カメラ、ハウジング、レンズ等）を収集
+2. マスターデータテーブルに一括登録
+3. システムチャートテーブルに関連データを登録
+
+【使用方法】
+python3 import_single.py <json_file_path>
+
+【前提条件】
+- .envファイルに以下の環境変数を設定
+  SUPABASE_URL=your_supabase_url
+  SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+- 必要なPythonパッケージをインストール
+  pip install supabase python-dotenv
+
+【使用例】
+# Canon EF-Mシステムをインポート
+python3 script/systemchart/import_single.py data/processed/systemchart/by_camera/Canon_EF-M.json
+
+# Sony α7R5システムをインポート
+python3 script/systemchart/import_single.py data/processed/systemchart/by_camera/Sony_Alpha_A7R5.json
+
+# Olympus OM-1システムをインポート
+python3 script/systemchart/import_single.py data/processed/systemchart/by_camera/Olympus_OM1.json
+
+【処理フロー】
+1. JSONファイルを読み込み
+2. ブランド・モデル名を自動抽出（Canon、Sony、Nauticam等のパターンマッチング）
+3. 既存データと重複チェック
+4. 新規データのみを各マスターテーブルに挿入
+5. 取得したIDを使ってsystem_chartsテーブルに関連データを登録
+
+【対応データ】
+- cameras（カメラ）
+- housings（ハウジング）
+- lenses（レンズ）
+- gears（ギア）
+- adapters（アダプター）
+- extensions（エクステンションリング）
+- ports（ポート）
 """
 
 import json
@@ -23,7 +64,22 @@ except ImportError:
     print("pip install python-dotenvを実行してください")
 
 def extract_brand_model(item_name: str, item_type: str) -> Tuple[str, str]:
-    """アイテム名からブランドとモデルを抽出"""
+    """
+    アイテム名からブランドとモデルを抽出する関数
+    
+    Args:
+        item_name (str): アイテムの名前（例: "Canon EOS R5", "NA-C815-Z"）
+        item_type (str): アイテムのタイプ（camera/housing/lens/gear/adapter/extension/port）
+    
+    Returns:
+        Tuple[str, str]: (ブランド名, モデル名)のタプル
+    
+    【対応ブランド例】
+    - カメラ: Canon, Nikon, Sony, Olympus, Fujifilm, Panasonic
+    - ハウジング: Nauticam (NA), SEA&SEA (MDX/DX), Olympus (PT/UH)
+    - レンズ・ギア: Canon, Nikon, Sony, SIGMA, Kenko, Nauticam
+    - ポート: Nauticam (NA), SEA&SEA (DX)
+    """
     if not item_name or item_name == 'None':
         return "", ""
     
@@ -97,7 +153,20 @@ def extract_brand_model(item_name: str, item_type: str) -> Tuple[str, str]:
     return "", item_name
 
 def collect_unique_items(file_path: str) -> Dict[str, Set[Tuple[str, str]]]:
-    """ファイルからユニークなアイテムを収集"""
+    """
+    JSONファイルからユニークなアイテムを収集し、ブランド・モデル別に整理する関数
+    
+    Args:
+        file_path (str): 処理するJSONファイルのパス
+    
+    Returns:
+        Dict[str, Set[Tuple[str, str]]]: 各カテゴリのユニークな(ブランド, モデル)のセット
+    
+    【処理内容】
+    - JSONファイル内の全レコードをスキャン
+    - 各アイテム（camera, housing, lens等）からブランド・モデルを抽出
+    - 重複を除去してユニークなアイテムのセットを作成
+    """
     items = {
         'cameras': set(),
         'housings': set(),
@@ -155,7 +224,23 @@ def collect_unique_items(file_path: str) -> Dict[str, Set[Tuple[str, str]]]:
     return items
 
 def insert_master_data(supabase: Client, table_name: str, items: Set[Tuple[str, str]]):
-    """マスターデータを一括挿入"""
+    """
+    マスターデータテーブルにユニークなアイテムを一括挿入する関数
+    
+    Args:
+        supabase (Client): Supabaseクライアント
+        table_name (str): 対象テーブル名（cameras, housings, lenses等）
+        items (Set[Tuple[str, str]]): 挿入する(ブランド, モデル)のセット
+    
+    Returns:
+        Dict[Tuple[str, str], int]: (ブランド, モデル) -> IDのマッピング
+    
+    【処理フロー】
+    1. 既存データをチェック
+    2. 新規アイテムのみを抽出
+    3. 一括挿入を試行（エラー時は個別挿入にフォールバック）
+    4. 挿入結果のIDマッピングを返却
+    """
     if not items:
         print(f"  {table_name}: 挿入するデータなし")
         return {}
@@ -200,7 +285,27 @@ def insert_master_data(supabase: Client, table_name: str, items: Set[Tuple[str, 
     return item_to_id
 
 def process_file_with_master_data(file_path: str, supabase: Client):
-    """マスターデータ登録後にシステムチャートを処理"""
+    """
+    マスターデータを登録後、システムチャートデータを処理する関数
+    
+    Args:
+        file_path (str): 処理するJSONファイルのパス
+        supabase (Client): Supabaseクライアント
+    
+    【3段階の処理】
+    Step 1: ユニークなアイテムを収集
+    Step 2: マスターデータを一括登録
+    Step 3: システムチャートに関連データを登録
+    
+    【重複チェック】
+    - 既存のsystem_chartsテーブルと照合
+    - 同一構成は重複として除外
+    
+    【エラーハンドリング】
+    - 各レコードで個別にエラーハンドリング
+    - 一部失敗でも処理継続
+    - 最終的に成功/失敗件数を表示
+    """
     print(f"Processing file: {file_path}")
     
     # Step 1: ユニークなアイテムを収集
@@ -321,9 +426,23 @@ def process_file_with_master_data(file_path: str, supabase: Client):
     print(f"合計: {len(data)}件")
 
 def main():
+    """
+    メイン実行関数
+    
+    【実行時引数チェック】
+    - JSONファイルパスが正しく指定されているかチェック
+    - ファイルの存在確認
+    
+    【環境変数チェック】
+    - SUPABASE_URL
+    - SUPABASE_SERVICE_ROLE_KEY
+    
+    【実行例】
+    python3 import_single.py data/processed/systemchart/by_camera/Canon_EF-M.json
+    """
     if len(sys.argv) != 2:
-        print("Usage: python3 import_master_data_first.py <json_file_path>")
-        print("Example: python3 import_master_data_first.py data/processed/systemchart/camera/Canon_80D.json")
+        print("Usage: python3 import_single.py <json_file_path>")
+        print("Example: python3 import_single.py data/processed/systemchart/by_camera/Canon_EF-M.json")
         sys.exit(1)
     
     file_path = sys.argv[1]

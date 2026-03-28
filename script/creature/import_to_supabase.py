@@ -2,23 +2,23 @@ import json
 import sys
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+from supabase import create_client
 
-# プロジェクトルートをパスに追加（2階層上がる）
-project_root = Path(__file__).parent.parent.parent
-sys.path.insert(0, str(project_root))
+load_dotenv(Path(__file__).parent.parent.parent / '.env')
 
-# デバッグ用：パスを確認
-print(f"📁 Project root: {project_root}")
-print(f"📁 Config path exists: {(project_root / 'config').exists()}")
+def get_client():
+    return create_client(
+        os.getenv('SUPABASE_URL'),
+        os.getenv('SUPABASE_SERVICE_ROLE_KEY')
+    )
 
-# config.supabaseからインポート
-try:
-    from config.supabase import get_client, test_connection
-    print("✅ config.supabase モジュールのインポート成功")
-except ImportError as e:
-    print(f"❌ config.supabase モジュールのインポート失敗: {e}")
-    print(f"   現在のPythonパス: {sys.path}")
-    sys.exit(1)
+def test_connection():
+    try:
+        get_client().table('creatures').select('*').limit(1).execute()
+        return True
+    except Exception:
+        return False
 
 def import_creatures(json_file_path, mode='append'):
     """生き物データをSupabaseにインポート

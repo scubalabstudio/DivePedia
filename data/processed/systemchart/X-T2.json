@@ -1,0 +1,112 @@
+[
+  {
+    "camera": "X-T2",
+    "housing": "NA XT2",
+    "lens": "Carl Zeiss Touit 2.8/50M",
+    "gear": "XZ50-A",
+    "adapter": null,
+    "extension1": "NA エクステンションリングE20",
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E45フラットポート"
+  },
+  {
+    "camera": "X-T2",
+    "housing": "NA XT2",
+    "lens": "Carl Zeiss Touit 2.8/50M",
+    "gear": "XZ50-A",
+    "adapter": null,
+    "extension1": "NA エクステンションリングE30",
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E35フラットポート"
+  },
+  {
+    "camera": "X-T2",
+    "housing": "NA XT2",
+    "lens": "Fujinon XF60mm F2.4 R Macro",
+    "gear": "X60-A",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA EO65マクロポート"
+  },
+  {
+    "camera": "X-T2",
+    "housing": "NA XT2",
+    "lens": "Fujinon XF60mm F2.4 R Macro",
+    "gear": "X60-A",
+    "adapter": null,
+    "extension1": "NA エクステンションリングE20",
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E45フラットポート"
+  },
+  {
+    "camera": "X-T2",
+    "housing": "NA XT2",
+    "lens": "Fujinon XF18-55mm F2.8-4.0 R LM OIS",
+    "gear": "X1855-A & NA-X1855-Z1",
+    "adapter": "NA E/120マウントコンバーター55MF",
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA 180ガラスドームポート"
+  },
+  {
+    "camera": "X-T2",
+    "housing": "NA XT2",
+    "lens": "Fujinon XF18-55mm F2.8-4.0 R LM OIS",
+    "gear": "X1855-Z2",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E150ワイドポートMF"
+  },
+  {
+    "camera": "X-T2",
+    "housing": "NA XT2",
+    "lens": "Fujinon XF10-24mm F4 R OIS",
+    "gear": "X1024-A & NA-X1024-Z",
+    "adapter": "NA E/120マウントコンバーター55MF",
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA 180ガラスドームポート"
+  },
+  {
+    "camera": "X-T2",
+    "housing": "NA XT2",
+    "lens": "Fujinon XF18mm F2 R",
+    "gear": "X18-A",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E16M67フラットポート"
+  },
+  {
+    "camera": "X-T2",
+    "housing": "NA XT2",
+    "lens": "Fujinon XF23mm F2 R WR",
+    "gear": "X23-A",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E35フラットポート"
+  },
+  {
+    "camera": "X-T2",
+    "housing": "NA XT2",
+    "lens": "Fujinon XF23mm F2 R WR",
+    "gear": "X23-A",
+    "adapter": null,
+    "extension1": "NA エクステンションリング E17",
+    "extension2": null,
+    "extension3": null,
+    "port": "NA E16M67フラットポート"
+  }
+]

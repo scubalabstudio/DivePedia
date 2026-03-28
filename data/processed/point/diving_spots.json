@@ -16,10 +16,6 @@
     "prefecture": "三重県"
   },
   {
-    "name": "方座浦",
-    "prefecture": "三重県"
-  },
-  {
     "name": "梶賀",
     "prefecture": "三重県"
   },
@@ -49,10 +45,6 @@
   },
   {
     "name": "ウトロ",
-    "prefecture": "北海道"
-  },
-  {
-    "name": "ローソク岩",
     "prefecture": "北海道"
   },
   {
@@ -88,10 +80,6 @@
     "prefecture": "北海道"
   },
   {
-    "name": "積丹美国",
-    "prefecture": "北海道"
-  },
-  {
     "name": "羅臼",
     "prefecture": "北海道"
   },
@@ -108,10 +96,6 @@
     "prefecture": "北海道"
   },
   {
-    "name": "伊戸",
-    "prefecture": "千葉県"
-  },
-  {
     "name": "勝浦",
     "prefecture": "千葉県"
   },
@@ -121,10 +105,6 @@
   },
   {
     "name": "行川",
-    "prefecture": "千葉県"
-  },
-  {
-    "name": "西川名",
     "prefecture": "千葉県"
   },
   {
@@ -148,10 +128,6 @@
     "prefecture": "和歌山県"
   },
   {
-    "name": "南紀串本",
-    "prefecture": "和歌山県"
-  },
-  {
     "name": "南紀白浜",
     "prefecture": "和歌山県"
   },
@@ -169,10 +145,6 @@
   },
   {
     "name": "白崎",
-    "prefecture": "和歌山県"
-  },
-  {
-    "name": "白崎（由良町）",
     "prefecture": "和歌山県"
   },
   {
@@ -208,23 +180,7 @@
     "prefecture": "宮城県"
   },
   {
-    "name": "南郷",
-    "prefecture": "宮崎県"
-  },
-  {
-    "name": "延岡",
-    "prefecture": "宮崎県"
-  },
-  {
-    "name": "越中宮崎",
-    "prefecture": "富山県"
-  },
-  {
     "name": "周防大島",
-    "prefecture": "山口県"
-  },
-  {
-    "name": "山口県瀬戸内海",
     "prefecture": "山口県"
   },
   {
@@ -260,10 +216,6 @@
     "prefecture": "山口県"
   },
   {
-    "name": "庄内",
-    "prefecture": "山形県"
-  },
-  {
     "name": "鼠ヶ関",
     "prefecture": "山形県"
   },
@@ -280,10 +232,6 @@
     "prefecture": "岩手県"
   },
   {
-    "name": "島根大田",
-    "prefecture": "島根県"
-  },
-  {
     "name": "宍喰",
     "prefecture": "徳島県"
   },
@@ -296,19 +244,11 @@
     "prefecture": "徳島県"
   },
   {
-    "name": "佐渡ヶ島",
-    "prefecture": "新潟県"
-  },
-  {
     "name": "佐渡島",
     "prefecture": "新潟県"
   },
   {
     "name": "柏崎",
-    "prefecture": "新潟県"
-  },
-  {
-    "name": "柏崎/番神",
     "prefecture": "新潟県"
   },
   {
@@ -336,19 +276,7 @@
     "prefecture": "東京都"
   },
   {
-    "name": "大島",
-    "prefecture": "東京都"
-  },
-  {
     "name": "孀婦岩",
-    "prefecture": "東京都"
-  },
-  {
-    "name": "小笠原（母島）",
-    "prefecture": "東京都"
-  },
-  {
-    "name": "小笠原（父島）",
     "prefecture": "東京都"
   },
   {
@@ -416,10 +344,6 @@
     "prefecture": "沖縄県"
   },
   {
-    "name": "南部＆チービシ諸島",
-    "prefecture": "沖縄県"
-  },
-  {
     "name": "古宇利島",
     "prefecture": "沖縄県"
   },
@@ -432,10 +356,6 @@
     "prefecture": "沖縄県"
   },
   {
-    "name": "嘉手納町水釜",
-    "prefecture": "沖縄県"
-  },
-  {
     "name": "多良間島",
     "prefecture": "沖縄県"
   },
@@ -445,10 +365,6 @@
   },
   {
     "name": "宜野湾",
-    "prefecture": "沖縄県"
-  },
-  {
-    "name": "宮古島",
     "prefecture": "沖縄県"
   },
   {
@@ -468,19 +384,7 @@
     "prefecture": "沖縄県"
   },
   {
-    "name": "恩納村",
-    "prefecture": "沖縄県"
-  },
-  {
-    "name": "慶良間（ケラマ）諸島",
-    "prefecture": "沖縄県"
-  },
-  {
     "name": "新城島",
-    "prefecture": "沖縄県"
-  },
-  {
-    "name": "本部半島",
     "prefecture": "沖縄県"
   },
   {
@@ -532,23 +436,11 @@
     "prefecture": "沖縄県"
   },
   {
-    "name": "石垣島・八重山周辺",
-    "prefecture": "沖縄県"
-  },
-  {
-    "name": "砂辺",
-    "prefecture": "沖縄県"
-  },
-  {
     "name": "竹富島",
     "prefecture": "沖縄県"
   },
   {
     "name": "粟国島",
-    "prefecture": "沖縄県"
-  },
-  {
-    "name": "粟国島・渡名喜島",
     "prefecture": "沖縄県"
   },
   {
@@ -588,10 +480,6 @@
     "prefecture": "滋賀県"
   },
   {
-    "name": "天草",
-    "prefecture": "熊本県"
-  },
-  {
     "name": "九十九湾",
     "prefecture": "石川県"
   },
@@ -608,47 +496,11 @@
     "prefecture": "石川県"
   },
   {
-    "name": "三崎町諸磯",
-    "prefecture": "神奈川県"
-  },
-  {
-    "name": "三戸浜",
-    "prefecture": "神奈川県"
-  },
-  {
-    "name": "城ケ島",
-    "prefecture": "神奈川県"
-  },
-  {
     "name": "大磯",
     "prefecture": "神奈川県"
   },
   {
-    "name": "岩",
-    "prefecture": "神奈川県"
-  },
-  {
-    "name": "早川",
-    "prefecture": "神奈川県"
-  },
-  {
-    "name": "根府川",
-    "prefecture": "神奈川県"
-  },
-  {
     "name": "江ノ島",
-    "prefecture": "神奈川県"
-  },
-  {
-    "name": "江ノ島・エボシ岩",
-    "prefecture": "神奈川県"
-  },
-  {
-    "name": "江之浦",
-    "prefecture": "神奈川県"
-  },
-  {
-    "name": "石橋（神奈川）",
     "prefecture": "神奈川県"
   },
   {
@@ -676,10 +528,6 @@
     "prefecture": "神奈川県"
   },
   {
-    "name": "鎌倉沖",
-    "prefecture": "神奈川県"
-  },
-  {
     "name": "敦賀",
     "prefecture": "福井県"
   },
@@ -700,10 +548,6 @@
     "prefecture": "福岡県"
   },
   {
-    "name": "恋の浦",
-    "prefecture": "福岡県"
-  },
-  {
     "name": "沖ノ島（福岡）",
     "prefecture": "福岡県"
   },
@@ -717,10 +561,6 @@
   },
   {
     "name": "糸島",
-    "prefecture": "福岡県"
-  },
-  {
-    "name": "糸島・玄界灘",
     "prefecture": "福岡県"
   },
   {
@@ -756,14 +596,6 @@
     "prefecture": "長崎県"
   },
   {
-    "name": "五島列島・上五島",
-    "prefecture": "長崎県"
-  },
-  {
-    "name": "五島列島・下五島",
-    "prefecture": "長崎県"
-  },
-  {
     "name": "伊王島",
     "prefecture": "長崎県"
   },
@@ -773,10 +605,6 @@
   },
   {
     "name": "対馬",
-    "prefecture": "長崎県"
-  },
-  {
-    "name": "辰口",
     "prefecture": "長崎県"
   },
   {
@@ -868,10 +696,6 @@
     "prefecture": "静岡県"
   },
   {
-    "name": "浮島",
-    "prefecture": "静岡県"
-  },
-  {
     "name": "浮島・堂ヶ島",
     "prefecture": "静岡県"
   },
@@ -884,15 +708,11 @@
     "prefecture": "静岡県"
   },
   {
-    "name": "獅子浜",
-    "prefecture": "静岡県"
-  },
-  {
     "name": "田子",
     "prefecture": "静岡県"
   },
   {
-    "name": "石橋（静岡）",
+    "name": "石橋",
     "prefecture": "静岡県"
   },
   {
@@ -905,14 +725,6 @@
   },
   {
     "name": "網代",
-    "prefecture": "静岡県"
-  },
-  {
-    "name": "菖蒲沢",
-    "prefecture": "静岡県"
-  },
-  {
-    "name": "谷津",
     "prefecture": "静岡県"
   },
   {
@@ -930,14 +742,6 @@
   {
     "name": "黄金崎・安良里",
     "prefecture": "静岡県"
-  },
-  {
-    "name": "うぐる島・沖ノ島",
-    "prefecture": "高知県"
-  },
-  {
-    "name": "大月・柏島",
-    "prefecture": "高知県"
   },
   {
     "name": "室戸",
@@ -960,19 +764,11 @@
     "prefecture": "高知県"
   },
   {
-    "name": "竜串・足摺",
-    "prefecture": "高知県"
-  },
-  {
     "name": "足摺岬",
     "prefecture": "高知県"
   },
   {
     "name": "トカラ列島",
-    "prefecture": "鹿児島県"
-  },
-  {
-    "name": "トカラ列島・口之島",
     "prefecture": "鹿児島県"
   },
   {
@@ -1004,10 +800,6 @@
     "prefecture": "鹿児島県"
   },
   {
-    "name": "奄美大島・北部",
-    "prefecture": "鹿児島県"
-  },
-  {
     "name": "宝島",
     "prefecture": "鹿児島県"
   },
@@ -1025,14 +817,6 @@
   },
   {
     "name": "枕崎",
-    "prefecture": "鹿児島県"
-  },
-  {
-    "name": "枕崎・坊津",
-    "prefecture": "鹿児島県"
-  },
-  {
-    "name": "桜島",
     "prefecture": "鹿児島県"
   },
   {
@@ -1054,5 +838,2213 @@
   {
     "name": "錦江湾",
     "prefecture": "鹿児島県"
+  },
+  {
+    "name": "積丹美国",
+    "prefecture": "北海道"
+  },
+  {
+    "name": "ローソク岩",
+    "prefecture": "北海道"
+  },
+  {
+    "name": "庄内",
+    "prefecture": "山形県"
+  },
+  {
+    "name": "佐渡ヶ島",
+    "prefecture": "新潟県"
+  },
+  {
+    "name": "越中宮崎",
+    "prefecture": "富山県"
+  },
+  {
+    "name": "柏崎/番神",
+    "prefecture": "新潟県"
+  },
+  {
+    "name": "伊戸",
+    "prefecture": "千葉県"
+  },
+  {
+    "name": "西川名",
+    "prefecture": "千葉県"
+  },
+  {
+    "name": "城ケ島",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "三崎町諸磯",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "三戸浜",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "鎌倉沖",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "江ノ島・エボシ岩",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "早川",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "根府川",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "江之浦",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "岩",
+    "prefecture": "神奈川県"
+  },
+  {
+    "name": "谷津",
+    "prefecture": "静岡県"
+  },
+  {
+    "name": "菖蒲沢",
+    "prefecture": "静岡県"
+  },
+  {
+    "name": "獅子浜",
+    "prefecture": "静岡県"
+  },
+  {
+    "name": "浮島",
+    "prefecture": "静岡県"
+  },
+  {
+    "name": "大島",
+    "prefecture": "東京都"
+  },
+  {
+    "name": "小笠原（父島）",
+    "prefecture": "東京都"
+  },
+  {
+    "name": "小笠原（母島）",
+    "prefecture": "東京都"
+  },
+  {
+    "name": "白崎（由良町）",
+    "prefecture": "和歌山県"
+  },
+  {
+    "name": "南紀串本",
+    "prefecture": "和歌山県"
+  },
+  {
+    "name": "方座浦",
+    "prefecture": "三重県"
+  },
+  {
+    "name": "島根大田",
+    "prefecture": "島根県"
+  },
+  {
+    "name": "山口県瀬戸内海",
+    "prefecture": "山口県"
+  },
+  {
+    "name": "大月・柏島",
+    "prefecture": "高知県"
+  },
+  {
+    "name": "うぐる島・沖ノ島",
+    "prefecture": "高知県"
+  },
+  {
+    "name": "竜串・足摺",
+    "prefecture": "高知県"
+  },
+  {
+    "name": "恋の浦",
+    "prefecture": "福岡県"
+  },
+  {
+    "name": "糸島・玄界灘",
+    "prefecture": "福岡県"
+  },
+  {
+    "name": "五島列島・上五島",
+    "prefecture": "長崎県"
+  },
+  {
+    "name": "五島列島・下五島",
+    "prefecture": "長崎県"
+  },
+  {
+    "name": "辰口",
+    "prefecture": "長崎県"
+  },
+  {
+    "name": "天草",
+    "prefecture": "熊本県"
+  },
+  {
+    "name": "枕崎・坊津",
+    "prefecture": "鹿児島県"
+  },
+  {
+    "name": "桜島",
+    "prefecture": "鹿児島県"
+  },
+  {
+    "name": "南郷",
+    "prefecture": "宮崎県"
+  },
+  {
+    "name": "延岡",
+    "prefecture": "宮崎県"
+  },
+  {
+    "name": "トカラ列島・口之島",
+    "prefecture": "鹿児島県"
+  },
+  {
+    "name": "奄美大島・北部",
+    "prefecture": "鹿児島県"
+  },
+  {
+    "name": "本部半島",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "恩納村",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "嘉手納町水釜",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "砂辺",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "南部＆チービシ諸島",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "粟国島・渡名喜島",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "慶良間（ケラマ）諸島",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "宮古島",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "石垣島・八重山周辺",
+    "prefecture": "沖縄県"
+  },
+  {
+    "name": "セブ島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "ボホール島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "アニラオ",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "トゥバタハ岩礁",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "マラパスクア島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "コロン島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "アポ島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "ドゥマゲッティ",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "プエルトガレラ",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "ラジャ・アンパット",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "コモド島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "バリ島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "バリ島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "ブナケン国立公園",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "レンベ海峡",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "ワカトビ",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "ギリ・トラワンガン",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "アンボン",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "シパダン島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "マブール島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "カパライ島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "ラヤンラヤン島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "ペルヘンティアン島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "ティオマン島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "タオ島",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "シミラン諸島",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "リチェリューロック",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "ピピ島",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "ヒンデーン・ヒンムアン",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "アリ環礁",
+    "prefecture": "モルディブ"
+  },
+  {
+    "name": "バア環礁",
+    "prefecture": "モルディブ"
+  },
+  {
+    "name": "北マーレ環礁",
+    "prefecture": "モルディブ"
+  },
+  {
+    "name": "南マーレ環礁",
+    "prefecture": "モルディブ"
+  },
+  {
+    "name": "フヴァンムラ",
+    "prefecture": "モルディブ"
+  },
+  {
+    "name": "ブルーコーナー",
+    "prefecture": "パラオ"
+  },
+  {
+    "name": "ジャーマンチャネル",
+    "prefecture": "パラオ"
+  },
+  {
+    "name": "ウーロンチャネル",
+    "prefecture": "パラオ"
+  },
+  {
+    "name": "ジェリーフィッシュレイク",
+    "prefecture": "パラオ"
+  },
+  {
+    "name": "チューク",
+    "prefecture": "ミクロネシア連邦"
+  },
+  {
+    "name": "ヤップ島",
+    "prefecture": "ミクロネシア連邦"
+  },
+  {
+    "name": "サイパン",
+    "prefecture": "北マリアナ諸島"
+  },
+  {
+    "name": "テニアン島",
+    "prefecture": "北マリアナ諸島"
+  },
+  {
+    "name": "ロタ島",
+    "prefecture": "北マリアナ諸島"
+  },
+  {
+    "name": "グレートバリアリーフ",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "ヨンガラレック",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "ニンガルーリーフ",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "ロード・ハウ島",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "キンベ湾",
+    "prefecture": "パプアニューギニア"
+  },
+  {
+    "name": "アロタウ",
+    "prefecture": "パプアニューギニア"
+  },
+  {
+    "name": "マダン",
+    "prefecture": "パプアニューギニア"
+  },
+  {
+    "name": "タベウニ島",
+    "prefecture": "フィジー"
+  },
+  {
+    "name": "ベカ・ラグーン",
+    "prefecture": "フィジー"
+  },
+  {
+    "name": "イル・デ・パン",
+    "prefecture": "ニューカレドニア"
+  },
+  {
+    "name": "ランギロア環礁",
+    "prefecture": "タヒチ"
+  },
+  {
+    "name": "ファカラバ環礁",
+    "prefecture": "タヒチ"
+  },
+  {
+    "name": "ダハブ",
+    "prefecture": "エジプト"
+  },
+  {
+    "name": "シャルム・エル・シェイク",
+    "prefecture": "エジプト"
+  },
+  {
+    "name": "ハルガダ",
+    "prefecture": "エジプト"
+  },
+  {
+    "name": "ブラザーズ諸島",
+    "prefecture": "エジプト"
+  },
+  {
+    "name": "サンガネブ環礁",
+    "prefecture": "スーダン"
+  },
+  {
+    "name": "サーディンラン",
+    "prefecture": "南アフリカ"
+  },
+  {
+    "name": "アリワル・ショール",
+    "prefecture": "南アフリカ"
+  },
+  {
+    "name": "ザンジバル島",
+    "prefecture": "タンザニア"
+  },
+  {
+    "name": "トフォ",
+    "prefecture": "モザンビーク"
+  },
+  {
+    "name": "アルダブラ環礁",
+    "prefecture": "セーシェル"
+  },
+  {
+    "name": "カンクン",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "コスメル島",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "ラパス",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "ソコロ諸島",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "カボ・プルモ",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "グレート・ブルーホール",
+    "prefecture": "ベリーズ"
+  },
+  {
+    "name": "ターンエフ環礁",
+    "prefecture": "ベリーズ"
+  },
+  {
+    "name": "ココ島",
+    "prefecture": "コスタリカ"
+  },
+  {
+    "name": "ロアタン島",
+    "prefecture": "ホンジュラス"
+  },
+  {
+    "name": "ウティラ島",
+    "prefecture": "ホンジュラス"
+  },
+  {
+    "name": "グランドケイマン",
+    "prefecture": "ケイマン諸島"
+  },
+  {
+    "name": "ボネール島海洋公園",
+    "prefecture": "ボネール"
+  },
+  {
+    "name": "タイガービーチ",
+    "prefecture": "バハマ"
+  },
+  {
+    "name": "エグズーマ",
+    "prefecture": "バハマ"
+  },
+  {
+    "name": "ハワイ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "フロリダ・キーズ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "カリフォルニア",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "ガラパゴス諸島",
+    "prefecture": "エクアドル"
+  },
+  {
+    "name": "ガラパゴス諸島",
+    "prefecture": "エクアドル"
+  },
+  {
+    "name": "マルペロ島",
+    "prefecture": "コロンビア"
+  },
+  {
+    "name": "フェルナンド・デ・ノローニャ",
+    "prefecture": "ブラジル"
+  },
+  {
+    "name": "イースター島",
+    "prefecture": "チリ"
+  },
+  {
+    "name": "シルフラ",
+    "prefecture": "アイスランド"
+  },
+  {
+    "name": "ゴゾ島",
+    "prefecture": "マルタ"
+  },
+  {
+    "name": "チリケワ",
+    "prefecture": "マルタ"
+  },
+  {
+    "name": "ポルトフィーノ",
+    "prefecture": "イタリア"
+  },
+  {
+    "name": "メデス諸島",
+    "prefecture": "スペイン"
+  },
+  {
+    "name": "アゾレス諸島",
+    "prefecture": "ポルトガル"
+  },
+  {
+    "name": "ヴィス島",
+    "prefecture": "クロアチア"
+  },
+  {
+    "name": "ロンブロン島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "シキホール島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "ダーウィン",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "サバン・ビーチ",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "アロール島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "デラワン諸島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "マラトゥア島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "バンダ海",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "ゴロンタロ",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "ランカヤン島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "サムイ島",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "パタヤ",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "コンダオ島",
+    "prefecture": "ベトナム"
+  },
+  {
+    "name": "ニャチャン",
+    "prefecture": "ベトナム"
+  },
+  {
+    "name": "ロン島",
+    "prefecture": "カンボジア"
+  },
+  {
+    "name": "トリンコマリー",
+    "prefecture": "スリランカ"
+  },
+  {
+    "name": "ヒッカドゥワ",
+    "prefecture": "スリランカ"
+  },
+  {
+    "name": "デイマニヤート諸島",
+    "prefecture": "オマーン"
+  },
+  {
+    "name": "アカバ",
+    "prefecture": "ヨルダン"
+  },
+  {
+    "name": "フジャイラ",
+    "prefecture": "アラブ首長国連邦"
+  },
+  {
+    "name": "タジュラ湾",
+    "prefecture": "ジブチ"
+  },
+  {
+    "name": "ワタム海洋国立公園",
+    "prefecture": "ケニア"
+  },
+  {
+    "name": "ノシ・ベ",
+    "prefecture": "マダガスカル"
+  },
+  {
+    "name": "フリッカン・フラック",
+    "prefecture": "モーリシャス"
+  },
+  {
+    "name": "エスピリトゥサント島",
+    "prefecture": "バヌアツ"
+  },
+  {
+    "name": "ガダルカナル島",
+    "prefecture": "ソロモン諸島"
+  },
+  {
+    "name": "ギゾ島",
+    "prefecture": "ソロモン諸島"
+  },
+  {
+    "name": "ビキニ環礁",
+    "prefecture": "マーシャル諸島"
+  },
+  {
+    "name": "ババウ諸島",
+    "prefecture": "トンガ"
+  },
+  {
+    "name": "ラロトンガ島",
+    "prefecture": "クック諸島"
+  },
+  {
+    "name": "サバイイ島",
+    "prefecture": "サモア"
+  },
+  {
+    "name": "ニウエ島",
+    "prefecture": "ニウエ"
+  },
+  {
+    "name": "プア・ナイツ諸島",
+    "prefecture": "ニュージーランド"
+  },
+  {
+    "name": "ハワイ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "ハワイ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "ノースカロライナ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "カリフォルニア",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "バンクーバー島",
+    "prefecture": "カナダ"
+  },
+  {
+    "name": "トバモリー",
+    "prefecture": "カナダ"
+  },
+  {
+    "name": "ビミニ島",
+    "prefecture": "バハマ"
+  },
+  {
+    "name": "ハルディネス・デ・ラ・レイナ",
+    "prefecture": "キューバ"
+  },
+  {
+    "name": "グレースベイ",
+    "prefecture": "タークス・カイコス諸島"
+  },
+  {
+    "name": "シルバーバンク",
+    "prefecture": "ドミニカ共和国"
+  },
+  {
+    "name": "デセチェオ島",
+    "prefecture": "プエルトリコ"
+  },
+  {
+    "name": "キュラソー島",
+    "prefecture": "オランダ領アンティル"
+  },
+  {
+    "name": "サバ島",
+    "prefecture": "オランダ領アンティル"
+  },
+  {
+    "name": "アンティラ号",
+    "prefecture": "アルバ"
+  },
+  {
+    "name": "スフリエール海洋保護区",
+    "prefecture": "セントルシア"
+  },
+  {
+    "name": "ビアンカC",
+    "prefecture": "グレナダ"
+  },
+  {
+    "name": "アブロリョス諸島",
+    "prefecture": "ブラジル"
+  },
+  {
+    "name": "コイバ島",
+    "prefecture": "パナマ"
+  },
+  {
+    "name": "パロミノ諸島",
+    "prefecture": "ペルー"
+  },
+  {
+    "name": "スカパ・フロー",
+    "prefecture": "イギリス"
+  },
+  {
+    "name": "ランディ島",
+    "prefecture": "イギリス"
+  },
+  {
+    "name": "アラン諸島",
+    "prefecture": "アイルランド"
+  },
+  {
+    "name": "ロフォーテン諸島",
+    "prefecture": "ノルウェー"
+  },
+  {
+    "name": "グーレン",
+    "prefecture": "ノルウェー"
+  },
+  {
+    "name": "バルト海",
+    "prefecture": "スウェーデン"
+  },
+  {
+    "name": "バイカル湖",
+    "prefecture": "ロシア"
+  },
+  {
+    "name": "ラルナカ",
+    "prefecture": "キプロス"
+  },
+  {
+    "name": "サントリーニ島",
+    "prefecture": "ギリシャ"
+  },
+  {
+    "name": "キオス島",
+    "prefecture": "ギリシャ"
+  },
+  {
+    "name": "サルデーニャ島",
+    "prefecture": "イタリア"
+  },
+  {
+    "name": "ウスティカ島",
+    "prefecture": "イタリア"
+  },
+  {
+    "name": "コルシカ島",
+    "prefecture": "フランス"
+  },
+  {
+    "name": "カナリア諸島",
+    "prefecture": "スペイン"
+  },
+  {
+    "name": "テネリフェ島",
+    "prefecture": "スペイン"
+  },
+  {
+    "name": "マデイラ島",
+    "prefecture": "ポルトガル"
+  },
+  {
+    "name": "コルナティ国立公園",
+    "prefecture": "クロアチア"
+  },
+  {
+    "name": "カシュ",
+    "prefecture": "トルコ"
+  },
+  {
+    "name": "ラルボット海洋保護区",
+    "prefecture": "モナコ"
+  },
+  {
+    "name": "レイテ島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "サブライヤン",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "スービック湾",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "カミギン島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "パングラオ島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "サンボアンガ",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "バンカ島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "ブリー",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "トギアン諸島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "ウェ島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "サンガラキ島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "カカバン島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "バリ島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "アンボン",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "アタウロ島",
+    "prefecture": "東ティモール"
+  },
+  {
+    "name": "ランカウイ島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "クチン",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "ルコンニア礁",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "リペ島",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "チャン島",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "ランタ島",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "ホイアン",
+    "prefecture": "ベトナム"
+  },
+  {
+    "name": "フーコック島",
+    "prefecture": "ベトナム"
+  },
+  {
+    "name": "コ・タン",
+    "prefecture": "カンボジア"
+  },
+  {
+    "name": "メルギー諸島",
+    "prefecture": "ミャンマー"
+  },
+  {
+    "name": "ブルーホール",
+    "prefecture": "グアム"
+  },
+  {
+    "name": "クレバス",
+    "prefecture": "グアム"
+  },
+  {
+    "name": "東海丸",
+    "prefecture": "グアム"
+  },
+  {
+    "name": "コスラエ島",
+    "prefecture": "ミクロネシア連邦"
+  },
+  {
+    "name": "ポンペイ島",
+    "prefecture": "ミクロネシア連邦"
+  },
+  {
+    "name": "マジュロ環礁",
+    "prefecture": "マーシャル諸島"
+  },
+  {
+    "name": "クェゼリン環礁",
+    "prefecture": "マーシャル諸島"
+  },
+  {
+    "name": "クリスマス島",
+    "prefecture": "キリバス"
+  },
+  {
+    "name": "ナウル島",
+    "prefecture": "ナウル"
+  },
+  {
+    "name": "ウポル島",
+    "prefecture": "サモア"
+  },
+  {
+    "name": "カダブ島",
+    "prefecture": "フィジー"
+  },
+  {
+    "name": "ママヌザ諸島",
+    "prefecture": "フィジー"
+  },
+  {
+    "name": "ブラigh・ウォーター",
+    "prefecture": "フィジー"
+  },
+  {
+    "name": "ボラボラ島",
+    "prefecture": "フランス領ポリネシア"
+  },
+  {
+    "name": "モーレア島",
+    "prefecture": "フランス領ポリネシア"
+  },
+  {
+    "name": "アイツタキ環礁",
+    "prefecture": "クック諸島"
+  },
+  {
+    "name": "フロリダ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "フロリダ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "テキサス",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "ワシントン州",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "ミズーリ州",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "イスラ・ムヘーレス",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "プラヤ・デル・カルメン",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "バンコ・チンチョロ",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "ロレト",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "バット諸島",
+    "prefecture": "コスタリカ"
+  },
+  {
+    "name": "カタリナ諸島",
+    "prefecture": "コスタリカ"
+  },
+  {
+    "name": "カーニョ島",
+    "prefecture": "コスタリカ"
+  },
+  {
+    "name": "ボカス・デル・トロ",
+    "prefecture": "パナマ"
+  },
+  {
+    "name": "プロビデンシア島",
+    "prefecture": "コロンビア"
+  },
+  {
+    "name": "サン・アンドレス島",
+    "prefecture": "コロンビア"
+  },
+  {
+    "name": "ロス・ロケス諸島",
+    "prefecture": "ベネズエラ"
+  },
+  {
+    "name": "トバゴ島",
+    "prefecture": "トリニダード・トバゴ"
+  },
+  {
+    "name": "カーライル湾",
+    "prefecture": "バルバドス"
+  },
+  {
+    "name": "スタティア海洋公園",
+    "prefecture": "セントユースタティウス"
+  },
+  {
+    "name": "RMSローヌ",
+    "prefecture": "イギリス領ヴァージン諸島"
+  },
+  {
+    "name": "セントクロイ島",
+    "prefecture": "アメリカ領ヴァージン諸島"
+  },
+  {
+    "name": "バミューダ諸島",
+    "prefecture": "バミューダ"
+  },
+  {
+    "name": "セントキッツ島",
+    "prefecture": "セントクリストファー・ネイビス"
+  },
+  {
+    "name": "スコッツヘッド",
+    "prefecture": "ドミニカ国"
+  },
+  {
+    "name": "ジャック・クストー保護区",
+    "prefecture": "グアドループ"
+  },
+  {
+    "name": "ダイヤモンドロック",
+    "prefecture": "マルティニーク"
+  },
+  {
+    "name": "マルサ・アラム",
+    "prefecture": "エジプト"
+  },
+  {
+    "name": "セントジョンズ・リーフ",
+    "prefecture": "エジプト"
+  },
+  {
+    "name": "サファガ",
+    "prefecture": "エジプト"
+  },
+  {
+    "name": "ウンブリア号",
+    "prefecture": "スーダン"
+  },
+  {
+    "name": "ファラサン・バンクス",
+    "prefecture": "サウジアラビア"
+  },
+  {
+    "name": "サル島",
+    "prefecture": "カーボベルデ"
+  },
+  {
+    "name": "マフィア島",
+    "prefecture": "タンザニア"
+  },
+  {
+    "name": "ペンバ島",
+    "prefecture": "タンザニア"
+  },
+  {
+    "name": "ポンタ・ド・オウロ",
+    "prefecture": "モザンビーク"
+  },
+  {
+    "name": "バザルト諸島",
+    "prefecture": "モザンビーク"
+  },
+  {
+    "name": "サント・マリー島",
+    "prefecture": "マダガスカル"
+  },
+  {
+    "name": "プラスリン島",
+    "prefecture": "セイシェル"
+  },
+  {
+    "name": "モヘリ島",
+    "prefecture": "コモロ"
+  },
+  {
+    "name": "コイン・ド・ミール",
+    "prefecture": "モーリシャス"
+  },
+  {
+    "name": "サン・ジル",
+    "prefecture": "レユニオン"
+  },
+  {
+    "name": "コスタ・ブラバ",
+    "prefecture": "スペイン"
+  },
+  {
+    "name": "バレアレス諸島",
+    "prefecture": "スペイン"
+  },
+  {
+    "name": "グラン・カナリア島",
+    "prefecture": "スペイン"
+  },
+  {
+    "name": "アルガルヴェ",
+    "prefecture": "ポルトガル"
+  },
+  {
+    "name": "ポール・クロ国立公園",
+    "prefecture": "フランス"
+  },
+  {
+    "name": "マルセイユ",
+    "prefecture": "フランス"
+  },
+  {
+    "name": "エルバ島",
+    "prefecture": "イタリア"
+  },
+  {
+    "name": "ランペドゥーザ島",
+    "prefecture": "イタリア"
+  },
+  {
+    "name": "コトル湾",
+    "prefecture": "モンテネグロ"
+  },
+  {
+    "name": "サランダ",
+    "prefecture": "アルバニア"
+  },
+  {
+    "name": "ザキントス島",
+    "prefecture": "ギリシャ"
+  },
+  {
+    "name": "ミコノス島",
+    "prefecture": "ギリシャ"
+  },
+  {
+    "name": "アイア・ナパ",
+    "prefecture": "キプロス"
+  },
+  {
+    "name": "コミノ島",
+    "prefecture": "マルタ"
+  },
+  {
+    "name": "南オーストラリア",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "メルボルン",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "タスマニア",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "ミルフォード・サウンド",
+    "prefecture": "ニュージーランド"
+  },
+  {
+    "name": "ホワイト島",
+    "prefecture": "ニュージーランド"
+  },
+  {
+    "name": "南極半島",
+    "prefecture": "南極"
+  },
+  {
+    "name": "スピッツベルゲン島",
+    "prefecture": "北極"
+  },
+  {
+    "name": "アンダマン諸島",
+    "prefecture": "インド"
+  },
+  {
+    "name": "アンダマン諸島",
+    "prefecture": "インド"
+  },
+  {
+    "name": "ラクシャドウィープ諸島",
+    "prefecture": "インド"
+  },
+  {
+    "name": "ゴア",
+    "prefecture": "インド"
+  },
+  {
+    "name": "ネトラニ島",
+    "prefecture": "インド"
+  },
+  {
+    "name": "ポンディシェリ",
+    "prefecture": "インド"
+  },
+  {
+    "name": "カルピティヤ",
+    "prefecture": "スリランカ"
+  },
+  {
+    "name": "キリンダ",
+    "prefecture": "スリランカ"
+  },
+  {
+    "name": "コロンボ",
+    "prefecture": "スリランカ"
+  },
+  {
+    "name": "チュルナ島",
+    "prefecture": "パキスタン"
+  },
+  {
+    "name": "セントマーチン島",
+    "prefecture": "バングラデシュ"
+  },
+  {
+    "name": "ラーム環礁",
+    "prefecture": "モルディブ"
+  },
+  {
+    "name": "アッドゥ環礁",
+    "prefecture": "モルディブ"
+  },
+  {
+    "name": "ガーフ環礁",
+    "prefecture": "モルディブ"
+  },
+  {
+    "name": "トリトン・ベイ",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "ハルマヘラ島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "モロタイ島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "スンバ島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "ティモール島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "サンギヘ諸島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "ティカオ島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "サマール島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "パナイ島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "ミンダナオ島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "ディナガット諸島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "レダン島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "テンゴル島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "ラン・テンガ島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "コ・ハー",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "トラン",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "スリン諸島",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "コ・コン",
+    "prefecture": "カンボジア"
+  },
+  {
+    "name": "ウェール島",
+    "prefecture": "ベトナム"
+  },
+  {
+    "name": "クリスマス島",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "ココス諸島",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "ジャービス湾",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "バイロンベイ",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "ウロンゴン",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "エスペランス",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "カイコウラ",
+    "prefecture": "ニュージーランド"
+  },
+  {
+    "name": "スチュアート島",
+    "prefecture": "ニュージーランド"
+  },
+  {
+    "name": "コロマンデル半島",
+    "prefecture": "ニュージーランド"
+  },
+  {
+    "name": "ラバウル",
+    "prefecture": "パプアニューギニア"
+  },
+  {
+    "name": "ケビエン",
+    "prefecture": "パプアニューギニア"
+  },
+  {
+    "name": "トゥフィ",
+    "prefecture": "パプアニューギニア"
+  },
+  {
+    "name": "フロリダ諸島",
+    "prefecture": "ソロモン諸島"
+  },
+  {
+    "name": "マロボ・ラグーン",
+    "prefecture": "ソロモン諸島"
+  },
+  {
+    "name": "タンナ島",
+    "prefecture": "バヌアツ"
+  },
+  {
+    "name": "ハアパイ諸島",
+    "prefecture": "トンガ"
+  },
+  {
+    "name": "リフー島",
+    "prefecture": "ニューカレドニア"
+  },
+  {
+    "name": "ウベア島",
+    "prefecture": "ニューカレドニア"
+  },
+  {
+    "name": "ウリシー環礁",
+    "prefecture": "ミクロネシア連邦"
+  },
+  {
+    "name": "フロリダ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "フロリダ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "フロリダ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "マサチューセッツ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "五大湖",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "ニューファンドランド",
+    "prefecture": "カナダ"
+  },
+  {
+    "name": "ノバスコシア",
+    "prefecture": "カナダ"
+  },
+  {
+    "name": "ファンディ湾",
+    "prefecture": "カナダ"
+  },
+  {
+    "name": "バークレー・サウンド",
+    "prefecture": "カナダ"
+  },
+  {
+    "name": "チアパス",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "ベラクルス",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "アティトラン湖",
+    "prefecture": "グアテマラ"
+  },
+  {
+    "name": "コーン・アイランド",
+    "prefecture": "ニカラグア"
+  },
+  {
+    "name": "ポルトベロ",
+    "prefecture": "パナマ"
+  },
+  {
+    "name": "パール諸島",
+    "prefecture": "パナマ"
+  },
+  {
+    "name": "ネグリル",
+    "prefecture": "ジャマイカ"
+  },
+  {
+    "name": "オーチョ・リオス",
+    "prefecture": "ジャマイカ"
+  },
+  {
+    "name": "ポート・ロイヤル",
+    "prefecture": "ジャマイカ"
+  },
+  {
+    "name": "ラバディー",
+    "prefecture": "ハイチ"
+  },
+  {
+    "name": "サオナ島",
+    "prefecture": "ドミニカ共和国"
+  },
+  {
+    "name": "カタリーナ島",
+    "prefecture": "ドミニカ共和国"
+  },
+  {
+    "name": "アンティグア島",
+    "prefecture": "アンティグア・バーブーダ"
+  },
+  {
+    "name": "モントセラト島",
+    "prefecture": "モントセラト"
+  },
+  {
+    "name": "ベキア島",
+    "prefecture": "セントビンセント・グレナディーン"
+  },
+  {
+    "name": "パーム島",
+    "prefecture": "アルバ"
+  },
+  {
+    "name": "ラジェ・デ・サントス",
+    "prefecture": "ブラジル"
+  },
+  {
+    "name": "アライアル・ド・カボ",
+    "prefecture": "ブラジル"
+  },
+  {
+    "name": "レシフェ",
+    "prefecture": "ブラジル"
+  },
+  {
+    "name": "プエルト・マドリン",
+    "prefecture": "アルゼンチン"
+  },
+  {
+    "name": "ウシュアイア",
+    "prefecture": "アルゼンチン"
+  },
+  {
+    "name": "プンタ・デ・チョロス",
+    "prefecture": "チリ"
+  },
+  {
+    "name": "ロビンソン・クルーソー島",
+    "prefecture": "チリ"
+  },
+  {
+    "name": "タイロナ国立公園",
+    "prefecture": "コロンビア"
+  },
+  {
+    "name": "ゴルゴナ島",
+    "prefecture": "コロンビア"
+  },
+  {
+    "name": "マチャリジャ国立公園",
+    "prefecture": "エクアドル"
+  },
+  {
+    "name": "マンコラ",
+    "prefecture": "ペルー"
+  },
+  {
+    "name": "ベルレンガス諸島",
+    "prefecture": "ポルトガル"
+  },
+  {
+    "name": "セジンブラ",
+    "prefecture": "ポルトガル"
+  },
+  {
+    "name": "カボ・デ・パロス",
+    "prefecture": "スペイン"
+  },
+  {
+    "name": "タバルカ島",
+    "prefecture": "スペイン"
+  },
+  {
+    "name": "カランク国立公園",
+    "prefecture": "フランス"
+  },
+  {
+    "name": "グレナン諸島",
+    "prefecture": "フランス"
+  },
+  {
+    "name": "カプリ島",
+    "prefecture": "イタリア"
+  },
+  {
+    "name": "バイア海底考古学公園",
+    "prefecture": "イタリア"
+  },
+  {
+    "name": "ポルトフィノ",
+    "prefecture": "イタリア"
+  },
+  {
+    "name": "クレタ島",
+    "prefecture": "ギリシャ"
+  },
+  {
+    "name": "アロニソス島",
+    "prefecture": "ギリシャ"
+  },
+  {
+    "name": "ボドルム",
+    "prefecture": "トルコ"
+  },
+  {
+    "name": "フェティエ",
+    "prefecture": "トルコ"
+  },
+  {
+    "name": "ムリェト島",
+    "prefecture": "クロアチア"
+  },
+  {
+    "name": "サントメ島",
+    "prefecture": "サントメ・プリンシペ"
+  },
+  {
+    "name": "ダカール",
+    "prefecture": "セネガル"
+  },
+  {
+    "name": "タバルカ",
+    "prefecture": "チュニジア"
+  },
+  {
+    "name": "ジブラルタル海峡",
+    "prefecture": "モロッコ"
+  },
+  {
+    "name": "済州島",
+    "prefecture": "韓国"
+  },
+  {
+    "name": "江陵",
+    "prefecture": "韓国"
+  },
+  {
+    "name": "千島湖",
+    "prefecture": "中国"
+  },
+  {
+    "name": "海南島",
+    "prefecture": "中国"
+  },
+  {
+    "name": "西貢",
+    "prefecture": "香港"
+  },
+  {
+    "name": "墾丁",
+    "prefecture": "台湾"
+  },
+  {
+    "name": "澎湖諸島",
+    "prefecture": "台湾"
+  },
+  {
+    "name": "ウラジオストク",
+    "prefecture": "ロシア"
+  },
+  {
+    "name": "白海",
+    "prefecture": "ロシア"
+  },
+  {
+    "name": "オヤモ鉱山",
+    "prefecture": "フィンランド"
+  },
+  {
+    "name": "ルム採石場",
+    "prefecture": "エストニア"
+  },
+  {
+    "name": "ルライ川",
+    "prefecture": "スウェーデン"
+  },
+  {
+    "name": "サルトストラウメン",
+    "prefecture": "ノルウェー"
+  },
+  {
+    "name": "リレベルト",
+    "prefecture": "デンマーク"
+  },
+  {
+    "name": "ヘムモール",
+    "prefecture": "ドイツ"
+  },
+  {
+    "name": "フェルンシュタイン湖",
+    "prefecture": "オーストリア"
+  },
+  {
+    "name": "アッター湖",
+    "prefecture": "オーストリア"
+  },
+  {
+    "name": "サマランガー湖",
+    "prefecture": "オーストリア"
+  },
+  {
+    "name": "ヴェルザスカ川",
+    "prefecture": "スイス"
+  },
+  {
+    "name": "レマン湖",
+    "prefecture": "スイス"
+  },
+  {
+    "name": "Nemo 33",
+    "prefecture": "ベルギー"
+  },
+  {
+    "name": "Deepspot",
+    "prefecture": "ポーランド"
+  },
+  {
+    "name": "Y-40 The Deep Joy",
+    "prefecture": "イタリア"
+  },
+  {
+    "name": "カポ・ダルクア湖",
+    "prefecture": "イタリア"
+  },
+  {
+    "name": "モルナール・ヤノーシュ洞窟",
+    "prefecture": "ハンガリー"
+  },
+  {
+    "name": "ストライタン",
+    "prefecture": "アイスランド"
+  },
+  {
+    "name": "タシーラク",
+    "prefecture": "グリーンランド"
+  },
+  {
+    "name": "プリンス・ウィリアム湾",
+    "prefecture": "アラスカ"
+  },
+  {
+    "name": "セントローレンス川",
+    "prefecture": "カナダ"
+  },
+  {
+    "name": "バークレー・サウンド",
+    "prefecture": "カナダ"
+  },
+  {
+    "name": "ユタ州",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "レイク・タホ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "フロリダ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "フロリダ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "ハワイ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "セノーテ・ドス・オホス",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "セノーテ・アンヘリータ",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "セノーテ・エル・ピット",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "ホル・チャン海洋保護区",
+    "prefecture": "ベリーズ"
+  },
+  {
+    "name": "カヨス・コチノス",
+    "prefecture": "ホンジュラス"
+  },
+  {
+    "name": "イロパンゴ湖",
+    "prefecture": "エルサルバドル"
+  },
+  {
+    "name": "ガン・ドカ・マンサニージョ",
+    "prefecture": "コスタリカ"
+  },
+  {
+    "name": "ガツン湖",
+    "prefecture": "パナマ"
+  },
+  {
+    "name": "ボニート",
+    "prefecture": "ブラジル"
+  },
+  {
+    "name": "ボニート",
+    "prefecture": "ブラジル"
+  },
+  {
+    "name": "グアラパリ",
+    "prefecture": "ブラジル"
+  },
+  {
+    "name": "ロス・モレス",
+    "prefecture": "チリ"
+  },
+  {
+    "name": "マクマード湾",
+    "prefecture": "南極"
+  },
+  {
+    "name": "タスマニア",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "ロード・ハウ島",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "ミリオン・ダラー・ポイント",
+    "prefecture": "バヌアツ"
+  },
+  {
+    "name": "テニア島",
+    "prefecture": "ニューカレドニア"
+  },
+  {
+    "name": "ナメナ海洋保護区",
+    "prefecture": "フィジー"
+  },
+  {
+    "name": "エウア島",
+    "prefecture": "トンガ"
+  },
+  {
+    "name": "パロロ・ディープ海洋保護区",
+    "prefecture": "サモア"
+  },
+  {
+    "name": "シャンデリア・ケーブ",
+    "prefecture": "パル"
+  },
+  {
+    "name": "バーティゴ",
+    "prefecture": "ヤップ"
+  },
+  {
+    "name": "クバル島",
+    "prefecture": "クウェート"
+  },
+  {
+    "name": "オールド・クラブ・リーフ",
+    "prefecture": "カタール"
+  },
+  {
+    "name": "ジェッダ",
+    "prefecture": "サウジアラビア"
+  },
+  {
+    "name": "ヤンブー",
+    "prefecture": "サウジアラビア"
+  },
+  {
+    "name": "Deep Dive Dubai",
+    "prefecture": "アラブ首長国連邦"
+  },
+  {
+    "name": "マスカット",
+    "prefecture": "オマーン"
+  },
+  {
+    "name": "ミラバット",
+    "prefecture": "オマーン"
+  },
+  {
+    "name": "ダフラク諸島",
+    "prefecture": "エリトリア"
+  },
+  {
+    "name": "セブン・ブラザーズ諸島",
+    "prefecture": "ジブチ"
+  },
+  {
+    "name": "キシテ・ムプングティ海洋公園",
+    "prefecture": "ケニア"
+  },
+  {
+    "name": "キルワ",
+    "prefecture": "タンザニア"
+  },
+  {
+    "name": "Sパス",
+    "prefecture": "マヨット島"
+  },
+  {
+    "name": "キャップ・ラ・ウセイ",
+    "prefecture": "レユニオン島"
+  },
+  {
+    "name": "ソドワナ・ベイ",
+    "prefecture": "南アフリカ"
+  },
+  {
+    "name": "ケープタウン",
+    "prefecture": "南アフリカ"
+  },
+  {
+    "name": "オチコト湖",
+    "prefecture": "ナミビア"
+  },
+  {
+    "name": "セントヘレナ",
+    "prefecture": "セントヘレナ島"
+  },
+  {
+    "name": "ランサローテ島",
+    "prefecture": "スペイン"
+  },
+  {
+    "name": "アゾレス諸島",
+    "prefecture": "ポルトガル"
+  },
+  {
+    "name": "HMSマオリ",
+    "prefecture": "マルタ"
+  },
+  {
+    "name": "ペリステラ",
+    "prefecture": "ギリシャ"
+  },
+  {
+    "name": "ガリポリ",
+    "prefecture": "トルコ"
+  },
+  {
+    "name": "アル・ホセイマ",
+    "prefecture": "モロッコ"
+  },
+  {
+    "name": "バスコ",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "ハンドゥルアン島",
+    "prefecture": "フィリピン"
+  },
+  {
+    "name": "ウジュン・クロン国立公園",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "セリブ諸島",
+    "prefecture": "インドネシア"
+  },
+  {
+    "name": "ルダン島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "ティオマン島",
+    "prefecture": "マレーシア"
+  },
+  {
+    "name": "スワンナプーム",
+    "prefecture": "タイ"
+  },
+  {
+    "name": "ブラックロック",
+    "prefecture": "ミャンマー"
+  },
+  {
+    "name": "フィッシュヘッド",
+    "prefecture": "モルディブ"
+  },
+  {
+    "name": "バナナリーフ",
+    "prefecture": "モルディブ"
+  },
+  {
+    "name": "マンタポイント",
+    "prefecture": "モルディブ"
+  },
+  {
+    "name": "SSシストルゴーム",
+    "prefecture": "エジプト"
+  },
+  {
+    "name": "ラス・モハメッド国立公園",
+    "prefecture": "エジプト"
+  },
+  {
+    "name": "ジャック・クストーの海中家屋",
+    "prefecture": "スーダン"
+  },
+  {
+    "name": "ネイビー・ピア",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "コッド・ホール",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "オスプレイ・リーフ",
+    "prefecture": "オーストラリア"
+  },
+  {
+    "name": "エドゥアルドズ・ポイント",
+    "prefecture": "パプアニューギニア"
+  },
+  {
+    "name": "トア丸",
+    "prefecture": "ソロモン諸島"
+  },
+  {
+    "name": "水中郵便局",
+    "prefecture": "バヌアツ"
+  },
+  {
+    "name": "サンフランシスコ丸",
+    "prefecture": "ミクロネシア"
+  },
+  {
+    "name": "富士川丸",
+    "prefecture": "ミクロネシア"
+  },
+  {
+    "name": "プリンツ・オイゲン",
+    "prefecture": "マーシャル諸島"
+  },
+  {
+    "name": "USSオリスカニー",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "USSスピーゲル・グローブ",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "スプーキー・チャンネル",
+    "prefecture": "アメリカ"
+  },
+  {
+    "name": "スティングレイ・シティ",
+    "prefecture": "ケイマン諸島"
+  },
+  {
+    "name": "ディーンズ・ブルーホール",
+    "prefecture": "バハマ"
+  },
+  {
+    "name": "MUSA",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "ブルシャーク・ポイント",
+    "prefecture": "メキシコ"
+  },
+  {
+    "name": "ハーフムーン・キー",
+    "prefecture": "ベリーズ"
+  },
+  {
+    "name": "ヒルマ・フッカー号",
+    "prefecture": "オランダ領アンティル"
+  },
+  {
+    "name": "ペデルナレス号",
+    "prefecture": "アルバ"
+  },
+  {
+    "name": "水中彫刻公園",
+    "prefecture": "グレナダ"
+  },
+  {
+    "name": "クリスタルリバー",
+    "prefecture": "ブラジル"
+  },
+  {
+    "name": "プエルト・モン",
+    "prefecture": "チリ"
+  },
+  {
+    "name": "ナルヴィク",
+    "prefecture": "ノルウェー"
+  },
+  {
+    "name": "シリー諸島",
+    "prefecture": "イギリス"
+  },
+  {
+    "name": "ファーン諸島",
+    "prefecture": "イギリス"
+  },
+  {
+    "name": "メディテラネ",
+    "prefecture": "フランス"
+  },
+  {
+    "name": "メノルカ島",
+    "prefecture": "スペイン"
+  },
+  {
+    "name": "ミロス島",
+    "prefecture": "ギリシャ"
+  },
+  {
+    "name": "バロン・ゴーシュ",
+    "prefecture": "クロアチア"
+  },
+  {
+    "name": "シダー・プライド",
+    "prefecture": "ヨルダン"
+  },
+  {
+    "name": "グリーン・レイク",
+    "prefecture": "オーストリア"
   }
 ]
