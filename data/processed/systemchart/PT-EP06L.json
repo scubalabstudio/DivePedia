@@ -1,0 +1,32 @@
+[
+  {
+    "camera": "E-PM1",
+    "housing": "PT-EP06L",
+    "lens": "M.ZUIKO DIGITAL 14-42mm F3.5-5.6 II",
+    "gear": "PPZR-EP02",
+    "adapter": "POSR-EP05",
+    "extension1": null,
+    "extension2": null,
+    "port": null
+  },
+  {
+    "camera": "E-PM1",
+    "housing": "PT-EP06L",
+    "lens": "M.ZUIKO DIGITAL 14-42mm F3.5-5.6 IIR",
+    "gear": "PPZR-EP02",
+    "adapter": "POSR-EP05",
+    "extension1": null,
+    "extension2": null,
+    "port": null
+  },
+  {
+    "camera": "E-PM1",
+    "housing": "PT-EP06L",
+    "lens": "M.ZUIKO DIGITAL 45mm F1.8",
+    "gear": null,
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "port": null
+  }
+]

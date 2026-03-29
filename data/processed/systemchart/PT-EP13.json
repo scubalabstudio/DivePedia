@@ -1,0 +1,82 @@
+[
+  {
+    "camera": "E-M5MarkII",
+    "housing": "PT-EP13",
+    "lens": "M.ZUIKO DIGITAL ED 9-18mm F4.0-5.6",
+    "gear": "PPZR-EP02",
+    "adapter": "POSR-EP02",
+    "extension1": null,
+    "extension2": null,
+    "port": null
+  },
+  {
+    "camera": "E-M5MarkII",
+    "housing": "PT-EP13",
+    "lens": "M.ZUIKO DIGITAL 14-42mm F3.5-5.6 IIR",
+    "gear": "PPZR-EP02",
+    "adapter": "POSR-EP05",
+    "extension1": null,
+    "extension2": null,
+    "port": null
+  },
+  {
+    "camera": "E-M5MarkII",
+    "housing": "PT-EP13",
+    "lens": "M.ZUIKO DIGITAL 45mm F1.8",
+    "gear": null,
+    "adapter": "POSR-EP03",
+    "extension1": null,
+    "extension2": null,
+    "port": null
+  },
+  {
+    "camera": "E-M5MarkII",
+    "housing": "PT-EP13",
+    "lens": "M.ZUIKO DIGITAL ED 75mm F1.8",
+    "gear": null,
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "port": null
+  },
+  {
+    "camera": "E-M5MarkII",
+    "housing": "PT-EP13",
+    "lens": "M.ZUIKO DIGITAL 25mm F1.8",
+    "gear": null,
+    "adapter": "POSR-EP09",
+    "extension1": null,
+    "extension2": null,
+    "port": null
+  },
+  {
+    "camera": "E-M5MarkII",
+    "housing": "PT-EP13",
+    "lens": "M.ZUIKO DIGITAL ED 12-50mm F3.5-6.3 EZ",
+    "gear": null,
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "port": null
+  },
+  {
+    "camera": "E-M5MarkII",
+    "housing": "PT-EP13",
+    "lens": "M.ZUIKO DIGITAL ED 30mm F3.5 Macro",
+    "gear": "PPZR-EP07",
+    "adapter": "POSR-EP11",
+    "extension1": null,
+    "extension2": null,
+    "port": null
+  },
+  {
+    "camera": "E-M5MarkII",
+    "housing": "PT-EP13",
+    "lens": "M.ZUIKO DIGITAL ED 60mm F2.8 Macro",
+    "gear": "PPZR-EP03",
+    "adapter": null,
+    "extension1": null,
+    "extension2": null,
+    "port": null
+  }
+]

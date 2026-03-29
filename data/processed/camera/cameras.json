@@ -1,0 +1,650 @@
+[
+  {
+    "model": "Canon EOS 5D Mark III",
+    "display_name": "Canon EOS 5D Mark III",
+    "brand": "Canon",
+    "type": "dslr"
+  },
+  {
+    "model": "Canon EOS 5D Mark IV",
+    "display_name": "Canon EOS 5D Mark IV",
+    "brand": "Canon",
+    "type": "dslr"
+  },
+  {
+    "model": "Canon EOS 5Ds R",
+    "display_name": "Canon EOS 5Ds R",
+    "brand": "Canon",
+    "type": "dslr"
+  },
+  {
+    "model": "Canon EOS 6D",
+    "display_name": "Canon EOS 6D",
+    "brand": "Canon",
+    "type": "dslr"
+  },
+  {
+    "model": "Canon EOS 6D Mark II",
+    "display_name": "Canon EOS 6D Mark II",
+    "brand": "Canon",
+    "type": "dslr"
+  },
+  {
+    "model": "Canon EOS 70D",
+    "display_name": "Canon EOS 70D",
+    "brand": "Canon",
+    "type": "dslr"
+  },
+  {
+    "model": "Canon EOS 7D Mark II",
+    "display_name": "Canon EOS 7D Mark II",
+    "brand": "Canon",
+    "type": "dslr"
+  },
+  {
+    "model": "Canon EOS 80D",
+    "display_name": "Canon EOS 80D",
+    "brand": "Canon",
+    "type": "dslr"
+  },
+  {
+    "model": "Canon EOS R",
+    "display_name": "Canon EOS R",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "Canon EOS R1",
+    "display_name": "Canon EOS R1",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "Canon EOS R3",
+    "display_name": "Canon EOS R3",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "Canon EOS R5",
+    "display_name": "Canon EOS R5",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "Canon EOS R5 C",
+    "display_name": "Canon EOS R5 C",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "Canon EOS R5 Mark II",
+    "display_name": "Canon EOS R5 Mark II",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "Canon EOS R6",
+    "display_name": "Canon EOS R6",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "Canon EOS R6 Mark II",
+    "display_name": "Canon EOS R6 Mark II",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "Canon EOS-1D X Mark II",
+    "display_name": "Canon EOS-1D X Mark II",
+    "brand": "Canon",
+    "type": "dslr"
+  },
+  {
+    "model": "Canon EOS-1D X Mark III",
+    "display_name": "Canon EOS-1D X Mark III",
+    "brand": "Canon",
+    "type": "dslr"
+  },
+  {
+    "model": "E-PL10",
+    "display_name": "Olympus PEN E-PL10",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-PL9",
+    "display_name": "Olympus PEN E-PL9",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-PL7",
+    "display_name": "Olympus PEN E-PL7",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-PL6",
+    "display_name": "Olympus PEN E-PL6",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-PL5",
+    "display_name": "Olympus PEN E-PL5",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-PL2",
+    "display_name": "Olympus PEN E-PL2",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-PL3",
+    "display_name": "Olympus PEN E-PL3",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-PM1",
+    "display_name": "Olympus PEN mini E-PM1",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-M5",
+    "display_name": "Olympus OM-D E-M5",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "GFX 100",
+    "display_name": "Fujifilm GFX 100",
+    "brand": "Fujifilm",
+    "type": "mirrorless"
+  },
+  {
+    "model": "GFX100II",
+    "display_name": "Fujifilm GFX 100 II",
+    "brand": "Fujifilm",
+    "type": "mirrorless"
+  },
+  {
+    "model": "GFX 100S",
+    "display_name": "Fujifilm GFX 100S",
+    "brand": "Fujifilm",
+    "type": "mirrorless"
+  },
+  {
+    "model": "GFX 50S",
+    "display_name": "Fujifilm GFX 50S",
+    "brand": "Fujifilm",
+    "type": "mirrorless"
+  },
+  {
+    "model": "NIKON D5",
+    "display_name": "Nikon D5",
+    "brand": "NIKON CORPORATION",
+    "type": "dslr"
+  },
+  {
+    "model": "NIKON D500",
+    "display_name": "Nikon D500",
+    "brand": "NIKON CORPORATION",
+    "type": "dslr"
+  },
+  {
+    "model": "NIKON D6",
+    "display_name": "Nikon D6",
+    "brand": "NIKON CORPORATION",
+    "type": "dslr"
+  },
+  {
+    "model": "NIKON D7200",
+    "display_name": "Nikon D7200",
+    "brand": "NIKON CORPORATION",
+    "type": "dslr"
+  },
+  {
+    "model": "NIKON D750",
+    "display_name": "Nikon D750",
+    "brand": "NIKON CORPORATION",
+    "type": "dslr"
+  },
+  {
+    "model": "NIKON D7500",
+    "display_name": "Nikon D7500",
+    "brand": "NIKON CORPORATION",
+    "type": "dslr"
+  },
+  {
+    "model": "NIKON D780",
+    "display_name": "Nikon D780",
+    "brand": "NIKON CORPORATION",
+    "type": "dslr"
+  },
+  {
+    "model": "NIKON D810",
+    "display_name": "Nikon D810",
+    "brand": "NIKON CORPORATION",
+    "type": "dslr"
+  },
+  {
+    "model": "NIKON D850",
+    "display_name": "Nikon D850",
+    "brand": "NIKON CORPORATION",
+    "type": "dslr"
+  },
+  {
+    "model": "NIKON Z 5II",
+    "display_name": "Nikon Z 5 II",
+    "brand": "NIKON CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "NIKON Z 6",
+    "display_name": "Nikon Z 6",
+    "brand": "NIKON CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "NIKON Z 6II",
+    "display_name": "Nikon Z 6 II",
+    "brand": "NIKON CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "NIKON Z 6III",
+    "display_name": "Nikon Z 6 III",
+    "brand": "NIKON CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "NIKON Z 7",
+    "display_name": "Nikon Z 7",
+    "brand": "NIKON CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "NIKON Z 7II",
+    "display_name": "Nikon Z 7 II",
+    "brand": "NIKON CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "NIKON Z 8",
+    "display_name": "Nikon Z 8",
+    "brand": "NIKON CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "NIKON Z 9",
+    "display_name": "Nikon Z 9",
+    "brand": "NIKON CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-M10MarkIV",
+    "display_name": "Olympus OM-D E-M10 Mark IV",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "mirrorless"
+  },
+  {
+    "model": "OM-1",
+    "display_name": "OM System OM-1",
+    "brand": "OM SYSTEM",
+    "type": "mirrorless"
+  },
+  {
+    "model": "OM-1MarkII",
+    "display_name": "OM System OM-1 Mark II",
+    "brand": "OM SYSTEM",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-M5MarkIII",
+    "display_name": "Olympus OM-D E-M5 Mark III",
+    "brand": "Olympus",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DC-S1H",
+    "display_name": "Panasonic Lumix S1H",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DC-S1R",
+    "display_name": "Panasonic Lumix S1R",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DC-S1RM2",
+    "display_name": "Panasonic Lumix S1R II",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DC-S5M2",
+    "display_name": "Panasonic Lumix S5 II",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-1",
+    "display_name": "Sony α1",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-7M4",
+    "display_name": "Sony α7 IV",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-7RM4",
+    "display_name": "Sony α7R IV",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-7RM5",
+    "display_name": "Sony α7R V",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-7SM3",
+    "display_name": "Sony α7S III",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-9M2",
+    "display_name": "Sony α9 II",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "TG-3",
+    "display_name": "Olympus Tough TG-3",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "compact"
+  },
+  {
+    "model": "TG-4",
+    "display_name": "Olympus Tough TG-4",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "compact"
+  },
+  {
+    "model": "TG-5",
+    "display_name": "Olympus Tough TG-5",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "compact"
+  },
+  {
+    "model": "TG-6",
+    "display_name": "Olympus Tough TG-6",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "compact"
+  },
+  {
+    "model": "TG-7",
+    "display_name": "Olympus Tough TG-7",
+    "brand": "OLYMPUS CORPORATION",
+    "type": "compact"
+  },
+  {
+    "model": "Canon EOS R7",
+    "display_name": "Canon EOS R7",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "Canon EOS Kiss M",
+    "display_name": "Canon EOS M50",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "Canon EOS Kiss M2",
+    "display_name": "Canon EOS M50 Mark II",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "Canon EOS M5",
+    "display_name": "Canon EOS M5",
+    "brand": "Canon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "X-H1",
+    "display_name": "Fujifilm X-H1",
+    "brand": "Fujifilm",
+    "type": "mirrorless"
+  },
+  {
+    "model": "X-T3",
+    "display_name": "Fujifilm X-T3",
+    "brand": "Fujifilm",
+    "type": "mirrorless"
+  },
+  {
+    "model": "X-T4",
+    "display_name": "Fujifilm X-T4",
+    "brand": "Fujifilm",
+    "type": "mirrorless"
+  },
+  {
+    "model": "X-T2",
+    "display_name": "Fujifilm X-T2",
+    "brand": "Fujifilm",
+    "type": "mirrorless"
+  },
+  {
+    "model": "X-T5",
+    "display_name": "Fujifilm X-T5",
+    "brand": "Fujifilm",
+    "type": "mirrorless"
+  },
+  {
+    "model": "NIKON Z 50",
+    "display_name": "Nikon Z 50",
+    "brand": "Nikon",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-M1",
+    "display_name": "Olympus OM-D E-M1",
+    "brand": "Olympus",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-M10MarkII",
+    "display_name": "Olympus OM-D E-M10 Mark II",
+    "brand": "Olympus",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-M10MarkIII",
+    "display_name": "Olympus OM-D E-M10 Mark III",
+    "brand": "Olympus",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-M1MarkII",
+    "display_name": "Olympus OM-D E-M1 Mark II",
+    "brand": "Olympus",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-M1MarkIII",
+    "display_name": "Olympus OM-D E-M1 Mark III",
+    "brand": "Olympus",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-M1X",
+    "display_name": "Olympus OM-D E-M1X",
+    "brand": "Olympus",
+    "type": "mirrorless"
+  },
+  {
+    "model": "E-M5MarkII",
+    "display_name": "Olympus OM-D E-M5 Mark II",
+    "brand": "Olympus",
+    "type": "mirrorless"
+  },
+  {
+    "model": "OM-5MarkII",
+    "display_name": "OM System OM-5 Mark II",
+    "brand": "Olympus",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DC-G9",
+    "display_name": "Panasonic Lumix G9",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DMC-GH4",
+    "display_name": "Panasonic Lumix GH4",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DC-GH5S",
+    "display_name": "Panasonic Lumix GH5S",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DC-GH6",
+    "display_name": "Panasonic Lumix GH6",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DMC-GX7",
+    "display_name": "Panasonic Lumix GX7",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DC-GX7MK3",
+    "display_name": "Panasonic Lumix GX7 Mark III",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DMC-GX8",
+    "display_name": "Panasonic Lumix GX8",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "DMC-GX7MK2",
+    "display_name": "Panasonic Lumix GX7 Mark II",
+    "brand": "Panasonic",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-7",
+    "display_name": "Sony α7",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-7C",
+    "display_name": "Sony α7C",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-7CM2",
+    "display_name": "Sony α7C II",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-7M2",
+    "display_name": "Sony α7 II",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-7R",
+    "display_name": "Sony α7R",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-7RM3",
+    "display_name": "Sony α7R III",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-9",
+    "display_name": "Sony α9",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-9M3",
+    "display_name": "Sony α9 III",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILME-FX3",
+    "display_name": "Sony FX3",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-5000",
+    "display_name": "Sony α5000",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-6300",
+    "display_name": "Sony α6300",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-6400",
+    "display_name": "Sony α6400",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-6500",
+    "display_name": "Sony α6500",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ILCE-6600",
+    "display_name": "Sony α6600",
+    "brand": "Sony",
+    "type": "mirrorless"
+  },
+  {
+    "model": "ZV-E1",
+    "display_name": "Sony ZV-E1",
+    "brand": "Sony",
+    "type": "mirrorless"
+  }
+]

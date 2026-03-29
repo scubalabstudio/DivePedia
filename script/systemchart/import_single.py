@@ -250,15 +250,21 @@ def insert_master_data(supabase: Client, table_name: str, items: Set[Tuple[str, 
     # 既存データを確認
     existing = supabase.table(table_name).select('id, brand, model').execute()
     existing_items = {(row['brand'], row['model']): row['id'] for row in existing.data}
-    
+    # model 単独でも検索できるようにする（brand 表記揺れ対策）
+    existing_by_model = {row['model']: row['id'] for row in existing.data}
+
     # 新規挿入が必要なアイテム
     new_items = []
     item_to_id = {}
-    
+
     for brand, model in items:
         if (brand, model) in existing_items:
             item_to_id[(brand, model)] = existing_items[(brand, model)]
             print(f"    既存: {brand} {model}")
+        elif model in existing_by_model:
+            # brand 表記が異なるが model が一致 → 既存レコードを使用
+            item_to_id[(brand, model)] = existing_by_model[model]
+            print(f"    既存(model一致): {model}")
         else:
             new_items.append({'brand': brand, 'model': model})
     
