@@ -1,8 +1,12 @@
 import json
+import re
+import signal
 import time
 import urllib.request
 import urllib.parse
 from pathlib import Path
+
+from deep_translator import GoogleTranslator
 
 INPUT_PATH = Path(__file__).parent.parent.parent / "data/processed/point/diving_spots.json"
 OUTPUT_PATH = INPUT_PATH
@@ -21,13 +25,34 @@ JP_PREFECTURES = {
     "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県",
 }
 
+_translator = GoogleTranslator(source="ja", target="en")
+_translate_cache: dict[str, str] = {}
+
+TRANSLATE_TIMEOUT_SEC = 10
+
+
+def _translate(text: str) -> str:
+    if text in _translate_cache:
+        return _translate_cache[text]
+
+    def _handler(signum: int, frame: object) -> None:
+        raise TimeoutError
+
+    signal.signal(signal.SIGALRM, _handler)
+    signal.alarm(TRANSLATE_TIMEOUT_SEC)
+    try:
+        result = _translator.translate(text)
+        _translate_cache[text] = result
+        return result
+    except Exception as e:
+        print(f"  ⚠️  翻訳エラー ({text}): {e}")
+        return text
+    finally:
+        signal.alarm(0)
+
 
 def _clean_name(name: str) -> str:
-    """括弧・中点などを除去してシンプルな地名を返す"""
-    import re
-    # 全角括弧内を除去: 八重干瀬（池間島）→ 八重干瀬
     name = re.sub(r'[（(][^）)]*[）)]', '', name).strip()
-    # 中点区切りの先頭部分のみ使用: 黄金崎・安良里 → 黄金崎
     name = name.split('・')[0].strip()
     return name
 
@@ -36,44 +61,52 @@ def _is_japan_coords(lat: float, lon: float) -> bool:
     return 24 <= lat <= 46 and 123 <= lon <= 146
 
 
+def _nominatim(query: str, extra_params: dict) -> tuple[float, float] | None:
+    params = urllib.parse.urlencode({
+        "q": query,
+        "format": "json",
+        "limit": 1,
+        **extra_params,
+    })
+    req = urllib.request.Request(f"{NOMINATIM_URL}?{params}", headers=HEADERS)
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            results = json.loads(resp.read().decode())
+        if results:
+            return float(results[0]["lat"]), float(results[0]["lon"])
+    except Exception as e:
+        print(f"  ⚠️  リクエストエラー ({query}): {e}")
+    time.sleep(DELAY_SEC)
+    return None
+
+
 def geocode(name: str, prefecture: str) -> tuple[float | None, float | None]:
     is_japan = prefecture in JP_PREFECTURES
     short_name = _clean_name(name)
 
     if is_japan:
-        queries = [
+        candidates = [
             (f"{name} {prefecture}", {"countrycodes": "jp"}),
             (f"{short_name} {prefecture}", {"countrycodes": "jp"}),
             (f"{short_name} Japan", {"countrycodes": "jp"}),
         ]
     else:
-        queries = [
+        en_name = _translate(short_name)
+        en_pref = _translate(prefecture)
+        candidates = [
             (f"{name} {prefecture}", {}),
             (f"{short_name} {prefecture}", {}),
-            (f"{short_name}", {}),
+            (f"{en_name} {en_pref}", {}),
+            (f"{en_name}", {}),
         ]
 
-    for query, extra_params in queries:
-        params = urllib.parse.urlencode({
-            "q": query,
-            "format": "json",
-            "limit": 1,
-            **extra_params,
-        })
-        req = urllib.request.Request(f"{NOMINATIM_URL}?{params}", headers=HEADERS)
-        try:
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                results = json.loads(resp.read().decode())
-            if results:
-                lat = float(results[0]["lat"])
-                lon = float(results[0]["lon"])
-                # 海外スポットに日本の座標が返った場合は無効とみなす
-                if not is_japan and _is_japan_coords(lat, lon):
-                    time.sleep(DELAY_SEC)
-                    continue
-                return lat, lon
-        except Exception as e:
-            print(f"  ⚠️  リクエストエラー ({query}): {e}")
+    for query, extra_params in candidates:
+        result = _nominatim(query, extra_params)
+        if result:
+            lat, lon = result
+            if not is_japan and _is_japan_coords(lat, lon):
+                continue
+            return lat, lon
         time.sleep(DELAY_SEC)
     return None, None
 
@@ -89,7 +122,7 @@ def main() -> None:
     updated = 0
     for i, spot in enumerate(spots):
         if "latitude" in spot and spot["latitude"] is not None:
-            continue  # 取得済みはスキップ
+            continue
 
         name = spot.get("name", "")
         prefecture = spot.get("prefecture", "")
@@ -105,7 +138,6 @@ def main() -> None:
         else:
             print(f"  -> 見つかりませんでした")
 
-        # 10件ごとに中間保存
         if (i + 1) % 10 == 0:
             with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
                 json.dump(spots, f, ensure_ascii=False, indent=2)

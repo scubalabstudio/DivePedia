@@ -1580,8 +1580,8 @@
   {
     "name": "セブ島",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 10.3492965,
+    "longitude": 123.7815476
   },
   {
     "name": "ボホール島",
@@ -1592,26 +1592,26 @@
   {
     "name": "アニラオ",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 10.9789447,
+    "longitude": 122.7511638
   },
   {
     "name": "トゥバタハ岩礁",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 8.8962332,
+    "longitude": 119.9202777
   },
   {
     "name": "マラパスクア島",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 11.3269582,
+    "longitude": 124.1124497
   },
   {
     "name": "コロン島",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 11.897307,
+    "longitude": 120.2382323
   },
   {
     "name": "アポ島",
@@ -1622,14 +1622,14 @@
   {
     "name": "ドゥマゲッティ",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.3054777,
+    "longitude": 123.3080446
   },
   {
     "name": "プエルトガレラ",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 13.5017104,
+    "longitude": 120.9543353
   },
   {
     "name": "ラジャ・アンパット",
@@ -1658,8 +1658,8 @@
   {
     "name": "ブナケン国立公園",
     "prefecture": "インドネシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 1.6732183,
+    "longitude": 124.758243
   },
   {
     "name": "レンベ海峡",
@@ -1688,14 +1688,14 @@
   {
     "name": "シパダン島",
     "prefecture": "マレーシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 4.11483,
+    "longitude": 118.6288155
   },
   {
     "name": "マブール島",
     "prefecture": "マレーシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 4.2457897,
+    "longitude": 118.6313299
   },
   {
     "name": "カパライ島",
@@ -1706,14 +1706,14 @@
   {
     "name": "ラヤンラヤン島",
     "prefecture": "マレーシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 7.3740726,
+    "longitude": 113.8193496
   },
   {
     "name": "ペルヘンティアン島",
     "prefecture": "マレーシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 5.9028873,
+    "longitude": 102.7557466
   },
   {
     "name": "ティオマン島",
@@ -1730,20 +1730,20 @@
   {
     "name": "シミラン諸島",
     "prefecture": "タイ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 8.5675819,
+    "longitude": 97.6357168
   },
   {
     "name": "リチェリューロック",
     "prefecture": "タイ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.3634061,
+    "longitude": 98.0220602
   },
   {
     "name": "ピピ島",
     "prefecture": "タイ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 12.935749,
+    "longitude": 100.6741103
   },
   {
     "name": "ヒンデーン・ヒンムアン",
@@ -1766,32 +1766,32 @@
   {
     "name": "北マーレ環礁",
     "prefecture": "モルディブ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 4.4378138,
+    "longitude": 73.5396643
   },
   {
     "name": "南マーレ環礁",
     "prefecture": "モルディブ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 3.9690661,
+    "longitude": 73.4311274
   },
   {
     "name": "フヴァンムラ",
     "prefecture": "モルディブ",
-    "latitude": null,
-    "longitude": null
+    "latitude": -0.2948408,
+    "longitude": 73.424065
   },
   {
     "name": "ブルーコーナー",
     "prefecture": "パラオ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 41.1822718,
+    "longitude": 9.3256954
   },
   {
     "name": "ジャーマンチャネル",
     "prefecture": "パラオ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 7.1276454,
+    "longitude": 134.2857331
   },
   {
     "name": "ウーロンチャネル",
@@ -1802,8 +1802,8 @@
   {
     "name": "ジェリーフィッシュレイク",
     "prefecture": "パラオ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 7.1612647,
+    "longitude": 134.3764261
   },
   {
     "name": "チューク",
@@ -1814,8 +1814,8 @@
   {
     "name": "ヤップ島",
     "prefecture": "ミクロネシア連邦",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.5161325,
+    "longitude": 138.0970353
   },
   {
     "name": "サイパン",
@@ -1838,8 +1838,8 @@
   {
     "name": "グレートバリアリーフ",
     "prefecture": "オーストラリア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -16.35,
+    "longitude": 145.9
   },
   {
     "name": "ヨンガラレック",
@@ -1850,8 +1850,8 @@
   {
     "name": "ニンガルーリーフ",
     "prefecture": "オーストラリア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -23.1416331,
+    "longitude": 113.7734121
   },
   {
     "name": "ロード・ハウ島",
@@ -1862,8 +1862,8 @@
   {
     "name": "キンベ湾",
     "prefecture": "パプアニューギニア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -5.5502054,
+    "longitude": 150.1445441
   },
   {
     "name": "アロタウ",
@@ -1880,8 +1880,8 @@
   {
     "name": "タベウニ島",
     "prefecture": "フィジー",
-    "latitude": null,
-    "longitude": null
+    "latitude": -16.8261493,
+    "longitude": -179.9354607
   },
   {
     "name": "ベカ・ラグーン",
@@ -1928,32 +1928,32 @@
   {
     "name": "ブラザーズ諸島",
     "prefecture": "エジプト",
-    "latitude": null,
-    "longitude": null
+    "latitude": 26.3019989,
+    "longitude": 34.8630688
   },
   {
     "name": "サンガネブ環礁",
     "prefecture": "スーダン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 19.751015,
+    "longitude": 37.4528475
   },
   {
     "name": "サーディンラン",
     "prefecture": "南アフリカ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.9496111,
+    "longitude": 123.3646696
   },
   {
     "name": "アリワル・ショール",
     "prefecture": "南アフリカ",
-    "latitude": null,
-    "longitude": null
+    "latitude": -30.2454855,
+    "longitude": 30.9074947
   },
   {
     "name": "ザンジバル島",
     "prefecture": "タンザニア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -6.1679223,
+    "longitude": 39.2228462
   },
   {
     "name": "トフォ",
@@ -1976,8 +1976,8 @@
   {
     "name": "コスメル島",
     "prefecture": "メキシコ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 20.4320599,
+    "longitude": -86.9206906
   },
   {
     "name": "ラパス",
@@ -1988,8 +1988,8 @@
   {
     "name": "ソコロ諸島",
     "prefecture": "メキシコ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 18.7927418,
+    "longitude": -110.9820313
   },
   {
     "name": "カボ・プルモ",
@@ -2018,14 +2018,14 @@
   {
     "name": "ロアタン島",
     "prefecture": "ホンジュラス",
-    "latitude": null,
-    "longitude": null
+    "latitude": 16.3490211,
+    "longitude": -86.4977513
   },
   {
     "name": "ウティラ島",
     "prefecture": "ホンジュラス",
-    "latitude": null,
-    "longitude": null
+    "latitude": 16.0965455,
+    "longitude": -86.9487998
   },
   {
     "name": "グランドケイマン",
@@ -2036,20 +2036,20 @@
   {
     "name": "ボネール島海洋公園",
     "prefecture": "ボネール",
-    "latitude": null,
-    "longitude": null
+    "latitude": 12.2009971,
+    "longitude": -68.3079578
   },
   {
     "name": "タイガービーチ",
     "prefecture": "バハマ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 40.4285947,
+    "longitude": -80.0861962
   },
   {
     "name": "エグズーマ",
     "prefecture": "バハマ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 23.9685,
+    "longitude": -76.1799049
   },
   {
     "name": "ハワイ",
@@ -2072,14 +2072,14 @@
   {
     "name": "ガラパゴス諸島",
     "prefecture": "エクアドル",
-    "latitude": null,
-    "longitude": null
+    "latitude": -0.628815,
+    "longitude": -90.3638752
   },
   {
     "name": "ガラパゴス諸島",
     "prefecture": "エクアドル",
-    "latitude": null,
-    "longitude": null
+    "latitude": -0.628815,
+    "longitude": -90.3638752
   },
   {
     "name": "マルペロ島",
@@ -2102,14 +2102,14 @@
   {
     "name": "シルフラ",
     "prefecture": "アイスランド",
-    "latitude": null,
-    "longitude": null
+    "latitude": 64.2551903,
+    "longitude": -21.1169415
   },
   {
     "name": "ゴゾ島",
     "prefecture": "マルタ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.0467778,
+    "longitude": 14.2582565
   },
   {
     "name": "チリケワ",
@@ -2126,8 +2126,8 @@
   {
     "name": "メデス諸島",
     "prefecture": "スペイン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 42.0529844,
+    "longitude": 3.2052901
   },
   {
     "name": "アゾレス諸島",
@@ -2150,8 +2150,8 @@
   {
     "name": "シキホール島",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.1978525,
+    "longitude": 123.5594889
   },
   {
     "name": "ダーウィン",
@@ -2168,20 +2168,20 @@
   {
     "name": "アロール島",
     "prefecture": "インドネシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -8.2911448,
+    "longitude": 124.7777164
   },
   {
     "name": "デラワン諸島",
     "prefecture": "インドネシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 2.2841235,
+    "longitude": 118.2435287
   },
   {
     "name": "マラトゥア島",
     "prefecture": "インドネシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 2.2374937,
+    "longitude": 118.5728007
   },
   {
     "name": "バンダ海",
@@ -2198,8 +2198,8 @@
   {
     "name": "ランカヤン島",
     "prefecture": "マレーシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 6.5070043,
+    "longitude": 117.91767
   },
   {
     "name": "サムイ島",
@@ -2228,8 +2228,8 @@
   {
     "name": "ロン島",
     "prefecture": "カンボジア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 10.715676,
+    "longitude": 103.2473427
   },
   {
     "name": "トリンコマリー",
@@ -2240,14 +2240,14 @@
   {
     "name": "ヒッカドゥワ",
     "prefecture": "スリランカ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 6.140753,
+    "longitude": 80.1028181
   },
   {
     "name": "デイマニヤート諸島",
     "prefecture": "オマーン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 23.8546138,
+    "longitude": 58.0661493
   },
   {
     "name": "アカバ",
@@ -2264,20 +2264,20 @@
   {
     "name": "タジュラ湾",
     "prefecture": "ジブチ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 11.7215355,
+    "longitude": 42.9717959
   },
   {
     "name": "ワタム海洋国立公園",
     "prefecture": "ケニア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -3.3609935,
+    "longitude": 39.9663294
   },
   {
     "name": "ノシ・ベ",
     "prefecture": "マダガスカル",
-    "latitude": null,
-    "longitude": null
+    "latitude": 41.1470917,
+    "longitude": -8.6168
   },
   {
     "name": "フリッカン・フラック",
@@ -2288,8 +2288,8 @@
   {
     "name": "エスピリトゥサント島",
     "prefecture": "バヌアツ",
-    "latitude": null,
-    "longitude": null
+    "latitude": -15.1563411,
+    "longitude": 167.0510705
   },
   {
     "name": "ガダルカナル島",
@@ -2300,8 +2300,8 @@
   {
     "name": "ギゾ島",
     "prefecture": "ソロモン諸島",
-    "latitude": null,
-    "longitude": null
+    "latitude": -8.0750297,
+    "longitude": 156.7871154
   },
   {
     "name": "ビキニ環礁",
@@ -2372,8 +2372,8 @@
   {
     "name": "トバモリー",
     "prefecture": "カナダ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 45.234697,
+    "longitude": -81.6430491
   },
   {
     "name": "ビミニ島",
@@ -2390,26 +2390,26 @@
   {
     "name": "グレースベイ",
     "prefecture": "タークス・カイコス諸島",
-    "latitude": null,
-    "longitude": null
+    "latitude": 46.1949393,
+    "longitude": -59.9561999
   },
   {
     "name": "シルバーバンク",
     "prefecture": "ドミニカ共和国",
-    "latitude": null,
-    "longitude": null
+    "latitude": -20.2438935,
+    "longitude": 57.4960204
   },
   {
     "name": "デセチェオ島",
     "prefecture": "プエルトリコ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 18.3838611,
+    "longitude": -67.4809844
   },
   {
     "name": "キュラソー島",
     "prefecture": "オランダ領アンティル",
-    "latitude": null,
-    "longitude": null
+    "latitude": 12.2135136,
+    "longitude": -69.040892
   },
   {
     "name": "サバ島",
@@ -2420,44 +2420,44 @@
   {
     "name": "アンティラ号",
     "prefecture": "アルバ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 12.602098,
+    "longitude": -70.0577618
   },
   {
     "name": "スフリエール海洋保護区",
     "prefecture": "セントルシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 13.8548517,
+    "longitude": -61.059694
   },
   {
     "name": "ビアンカC",
     "prefecture": "グレナダ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 38.8976387,
+    "longitude": -77.0365528
   },
   {
     "name": "アブロリョス諸島",
     "prefecture": "ブラジル",
-    "latitude": null,
-    "longitude": null
+    "latitude": -28.4636066,
+    "longitude": 113.6975593
   },
   {
     "name": "コイバ島",
     "prefecture": "パナマ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 7.4834265,
+    "longitude": -81.7959155
   },
   {
     "name": "パロミノ諸島",
     "prefecture": "ペルー",
-    "latitude": null,
-    "longitude": null
+    "latitude": -12.1294858,
+    "longitude": -77.2332306
   },
   {
     "name": "スカパ・フロー",
     "prefecture": "イギリス",
-    "latitude": null,
-    "longitude": null
+    "latitude": 52.2830246,
+    "longitude": -1.5838605
   },
   {
     "name": "ランディ島",
@@ -2492,8 +2492,8 @@
   {
     "name": "バイカル湖",
     "prefecture": "ロシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 53.6167299,
+    "longitude": 108.1307186
   },
   {
     "name": "ラルナカ",
@@ -2510,8 +2510,8 @@
   {
     "name": "キオス島",
     "prefecture": "ギリシャ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 38.3758132,
+    "longitude": 26.0646552
   },
   {
     "name": "サルデーニャ島",
@@ -2522,8 +2522,8 @@
   {
     "name": "ウスティカ島",
     "prefecture": "イタリア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 38.7104559,
+    "longitude": 13.1912999
   },
   {
     "name": "コルシカ島",
@@ -2552,14 +2552,14 @@
   {
     "name": "コルナティ国立公園",
     "prefecture": "クロアチア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 43.7734466,
+    "longitude": 15.3365118
   },
   {
     "name": "カシュ",
     "prefecture": "トルコ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.1995075,
+    "longitude": 29.6394998
   },
   {
     "name": "ラルボット海洋保護区",
@@ -2582,20 +2582,20 @@
   {
     "name": "スービック湾",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 14.7849787,
+    "longitude": 120.2339799
   },
   {
     "name": "カミギン島",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.1682009,
+    "longitude": 124.7137084
   },
   {
     "name": "パングラオ島",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.594752,
+    "longitude": 123.8071692
   },
   {
     "name": "サンボアンガ",
@@ -2618,8 +2618,8 @@
   {
     "name": "トギアン諸島",
     "prefecture": "インドネシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -0.3811424,
+    "longitude": 121.9442056
   },
   {
     "name": "ウェ島",
@@ -2630,14 +2630,14 @@
   {
     "name": "サンガラキ島",
     "prefecture": "インドネシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 2.0862854,
+    "longitude": 118.3994784
   },
   {
     "name": "カカバン島",
     "prefecture": "インドネシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 2.1394522,
+    "longitude": 118.5400151
   },
   {
     "name": "バリ島",
@@ -2654,8 +2654,8 @@
   {
     "name": "アタウロ島",
     "prefecture": "東ティモール",
-    "latitude": null,
-    "longitude": null
+    "latitude": -8.2179324,
+    "longitude": 125.581923
   },
   {
     "name": "ランカウイ島",
@@ -2672,8 +2672,8 @@
   {
     "name": "ルコンニア礁",
     "prefecture": "マレーシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 5.02381,
+    "longitude": 112.63868
   },
   {
     "name": "リペ島",
@@ -2714,20 +2714,20 @@
   {
     "name": "メルギー諸島",
     "prefecture": "ミャンマー",
-    "latitude": null,
-    "longitude": null
+    "latitude": 12.1966099,
+    "longitude": 98.409336
   },
   {
     "name": "ブルーホール",
     "prefecture": "グアム",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.5723028,
+    "longitude": 34.5373553
   },
   {
     "name": "クレバス",
     "prefecture": "グアム",
-    "latitude": null,
-    "longitude": null
+    "latitude": 46.0648389,
+    "longitude": 7.1506371
   },
   {
     "name": "東海丸",
@@ -2738,26 +2738,26 @@
   {
     "name": "コスラエ島",
     "prefecture": "ミクロネシア連邦",
-    "latitude": null,
-    "longitude": null
+    "latitude": 5.3142621,
+    "longitude": 162.9811154
   },
   {
     "name": "ポンペイ島",
     "prefecture": "ミクロネシア連邦",
-    "latitude": null,
-    "longitude": null
+    "latitude": 6.8870468,
+    "longitude": 158.2406138
   },
   {
     "name": "マジュロ環礁",
     "prefecture": "マーシャル諸島",
-    "latitude": null,
-    "longitude": null
+    "latitude": 7.1103499,
+    "longitude": 171.2231827
   },
   {
     "name": "クェゼリン環礁",
     "prefecture": "マーシャル諸島",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.1604635,
+    "longitude": 167.0795542
   },
   {
     "name": "クリスマス島",
@@ -2774,20 +2774,20 @@
   {
     "name": "ウポル島",
     "prefecture": "サモア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -14.0150613,
+    "longitude": -171.4245844
   },
   {
     "name": "カダブ島",
     "prefecture": "フィジー",
-    "latitude": null,
-    "longitude": null
+    "latitude": -19.047994,
+    "longitude": 178.3629377
   },
   {
     "name": "ママヌザ諸島",
     "prefecture": "フィジー",
-    "latitude": null,
-    "longitude": null
+    "latitude": -17.7495601,
+    "longitude": 177.1706455
   },
   {
     "name": "ブラigh・ウォーター",
@@ -2876,8 +2876,8 @@
   {
     "name": "カタリナ諸島",
     "prefecture": "コスタリカ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 33.3889038,
+    "longitude": -118.4239288
   },
   {
     "name": "カーニョ島",
@@ -2918,26 +2918,26 @@
   {
     "name": "カーライル湾",
     "prefecture": "バルバドス",
-    "latitude": null,
-    "longitude": null
+    "latitude": 13.087425,
+    "longitude": -59.6154379
   },
   {
     "name": "スタティア海洋公園",
     "prefecture": "セントユースタティウス",
-    "latitude": null,
-    "longitude": null
+    "latitude": 17.4924699,
+    "longitude": -62.9483625
   },
   {
     "name": "RMSローヌ",
     "prefecture": "イギリス領ヴァージン諸島",
-    "latitude": null,
-    "longitude": null
+    "latitude": 45.3044515,
+    "longitude": 4.9314343
   },
   {
     "name": "セントクロイ島",
     "prefecture": "アメリカ領ヴァージン諸島",
-    "latitude": null,
-    "longitude": null
+    "latitude": 17.729124,
+    "longitude": -64.7589156
   },
   {
     "name": "バミューダ諸島",
@@ -2948,26 +2948,26 @@
   {
     "name": "セントキッツ島",
     "prefecture": "セントクリストファー・ネイビス",
-    "latitude": null,
-    "longitude": null
+    "latitude": 17.3155554,
+    "longitude": -62.7447785
   },
   {
     "name": "スコッツヘッド",
     "prefecture": "ドミニカ国",
-    "latitude": null,
-    "longitude": null
+    "latitude": 41.3469486,
+    "longitude": -70.8300636
   },
   {
     "name": "ジャック・クストー保護区",
     "prefecture": "グアドループ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 16.4220066,
+    "longitude": -61.5280072
   },
   {
     "name": "ダイヤモンドロック",
     "prefecture": "マルティニーク",
-    "latitude": null,
-    "longitude": null
+    "latitude": 14.4792663,
+    "longitude": -61.0034831
   },
   {
     "name": "マルサ・アラム",
@@ -2990,8 +2990,8 @@
   {
     "name": "ウンブリア号",
     "prefecture": "スーダン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 19.6367031,
+    "longitude": 37.290526
   },
   {
     "name": "ファラサン・バンクス",
@@ -3026,8 +3026,8 @@
   {
     "name": "バザルト諸島",
     "prefecture": "モザンビーク",
-    "latitude": null,
-    "longitude": null
+    "latitude": -21.649252,
+    "longitude": 35.469766
   },
   {
     "name": "サント・マリー島",
@@ -3038,8 +3038,8 @@
   {
     "name": "プラスリン島",
     "prefecture": "セイシェル",
-    "latitude": null,
-    "longitude": null
+    "latitude": -4.3250708,
+    "longitude": 55.7356082
   },
   {
     "name": "モヘリ島",
@@ -3050,8 +3050,8 @@
   {
     "name": "コイン・ド・ミール",
     "prefecture": "モーリシャス",
-    "latitude": null,
-    "longitude": null
+    "latitude": -19.9419234,
+    "longitude": 57.620347
   },
   {
     "name": "サン・ジル",
@@ -3080,8 +3080,8 @@
   {
     "name": "アルガルヴェ",
     "prefecture": "ポルトガル",
-    "latitude": null,
-    "longitude": null
+    "latitude": 37.2449218,
+    "longitude": -8.1959563
   },
   {
     "name": "ポール・クロ国立公園",
@@ -3110,8 +3110,8 @@
   {
     "name": "コトル湾",
     "prefecture": "モンテネグロ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 42.4542486,
+    "longitude": 18.6720302
   },
   {
     "name": "サランダ",
@@ -3122,14 +3122,14 @@
   {
     "name": "ザキントス島",
     "prefecture": "ギリシャ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 37.7891385,
+    "longitude": 20.7900896
   },
   {
     "name": "ミコノス島",
     "prefecture": "ギリシャ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 37.4513937,
+    "longitude": 25.3923149
   },
   {
     "name": "アイア・ナパ",
@@ -3140,8 +3140,8 @@
   {
     "name": "コミノ島",
     "prefecture": "マルタ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.0118868,
+    "longitude": 14.3369304
   },
   {
     "name": "南オーストラリア",
@@ -3170,8 +3170,8 @@
   {
     "name": "ホワイト島",
     "prefecture": "ニュージーランド",
-    "latitude": null,
-    "longitude": null
+    "latitude": -37.5200619,
+    "longitude": 177.1814086
   },
   {
     "name": "南極半島",
@@ -3200,8 +3200,8 @@
   {
     "name": "ラクシャドウィープ諸島",
     "prefecture": "インド",
-    "latitude": null,
-    "longitude": null
+    "latitude": 10.8665537,
+    "longitude": 72.1944014
   },
   {
     "name": "ゴア",
@@ -3212,8 +3212,8 @@
   {
     "name": "ネトラニ島",
     "prefecture": "インド",
-    "latitude": null,
-    "longitude": null
+    "latitude": 14.0172284,
+    "longitude": 74.3271448
   },
   {
     "name": "ポンディシェリ",
@@ -3224,8 +3224,8 @@
   {
     "name": "カルピティヤ",
     "prefecture": "スリランカ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 8.2368062,
+    "longitude": 79.7661508
   },
   {
     "name": "キリンダ",
@@ -3242,44 +3242,44 @@
   {
     "name": "チュルナ島",
     "prefecture": "パキスタン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 24.8976325,
+    "longitude": 66.6052717
   },
   {
     "name": "セントマーチン島",
     "prefecture": "バングラデシュ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 18.0423736,
+    "longitude": -63.0549948
   },
   {
     "name": "ラーム環礁",
     "prefecture": "モルディブ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 1.9532823,
+    "longitude": 73.4003465
   },
   {
     "name": "アッドゥ環礁",
     "prefecture": "モルディブ",
-    "latitude": null,
-    "longitude": null
+    "latitude": -0.6414934,
+    "longitude": 73.1629978
   },
   {
     "name": "ガーフ環礁",
     "prefecture": "モルディブ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0.6718081,
+    "longitude": 73.4384681
   },
   {
     "name": "トリトン・ベイ",
     "prefecture": "インドネシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -3.6343779,
+    "longitude": 133.8175961
   },
   {
     "name": "ハルマヘラ島",
     "prefecture": "インドネシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 0.6536435,
+    "longitude": 127.9319556
   },
   {
     "name": "モロタイ島",
@@ -3302,14 +3302,14 @@
   {
     "name": "サンギヘ諸島",
     "prefecture": "インドネシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 3.5527079,
+    "longitude": 125.5465645
   },
   {
     "name": "ティカオ島",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 12.5158696,
+    "longitude": 123.7086789
   },
   {
     "name": "サマール島",
@@ -3332,8 +3332,8 @@
   {
     "name": "ディナガット諸島",
     "prefecture": "フィリピン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 10.1577932,
+    "longitude": 125.5851827
   },
   {
     "name": "レダン島",
@@ -3344,8 +3344,8 @@
   {
     "name": "テンゴル島",
     "prefecture": "マレーシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 4.8053878,
+    "longitude": 103.6805603
   },
   {
     "name": "ラン・テンガ島",
@@ -3368,8 +3368,8 @@
   {
     "name": "スリン諸島",
     "prefecture": "タイ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.401572,
+    "longitude": 97.8653235
   },
   {
     "name": "コ・コン",
@@ -3398,14 +3398,14 @@
   {
     "name": "ジャービス湾",
     "prefecture": "オーストラリア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -35.1494368,
+    "longitude": 150.7085321
   },
   {
     "name": "バイロンベイ",
     "prefecture": "オーストラリア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -28.6483333,
+    "longitude": 153.6177778
   },
   {
     "name": "ウロンゴン",
@@ -3434,8 +3434,8 @@
   {
     "name": "コロマンデル半島",
     "prefecture": "ニュージーランド",
-    "latitude": null,
-    "longitude": null
+    "latitude": -36.9811594,
+    "longitude": 175.6785237
   },
   {
     "name": "ラバウル",
@@ -3458,8 +3458,8 @@
   {
     "name": "フロリダ諸島",
     "prefecture": "ソロモン諸島",
-    "latitude": null,
-    "longitude": null
+    "latitude": -9.0695645,
+    "longitude": 160.223772
   },
   {
     "name": "マロボ・ラグーン",
@@ -3470,8 +3470,8 @@
   {
     "name": "タンナ島",
     "prefecture": "バヌアツ",
-    "latitude": null,
-    "longitude": null
+    "latitude": -19.4857785,
+    "longitude": 169.3345014
   },
   {
     "name": "ハアパイ諸島",
@@ -3482,20 +3482,20 @@
   {
     "name": "リフー島",
     "prefecture": "ニューカレドニア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -20.9328607,
+    "longitude": 167.1657848
   },
   {
     "name": "ウベア島",
     "prefecture": "ニューカレドニア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -20.5490007,
+    "longitude": 166.5673946
   },
   {
     "name": "ウリシー環礁",
     "prefecture": "ミクロネシア連邦",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.9613889,
+    "longitude": 139.6036111
   },
   {
     "name": "フロリダ",
@@ -3566,8 +3566,8 @@
   {
     "name": "アティトラン湖",
     "prefecture": "グアテマラ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 14.6801463,
+    "longitude": -91.186161
   },
   {
     "name": "コーン・アイランド",
@@ -3578,20 +3578,20 @@
   {
     "name": "ポルトベロ",
     "prefecture": "パナマ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.0809895,
+    "longitude": -79.3577558
   },
   {
     "name": "パール諸島",
     "prefecture": "パナマ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 8.3480622,
+    "longitude": -78.896185
   },
   {
     "name": "ネグリル",
     "prefecture": "ジャマイカ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 18.2779531,
+    "longitude": -78.3494771
   },
   {
     "name": "オーチョ・リオス",
@@ -3638,14 +3638,14 @@
   {
     "name": "ベキア島",
     "prefecture": "セントビンセント・グレナディーン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 13.0164963,
+    "longitude": -61.2320483
   },
   {
     "name": "パーム島",
     "prefecture": "アルバ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 12.4743339,
+    "longitude": -69.9931927
   },
   {
     "name": "ラジェ・デ・サントス",
@@ -3656,8 +3656,8 @@
   {
     "name": "アライアル・ド・カボ",
     "prefecture": "ブラジル",
-    "latitude": null,
-    "longitude": null
+    "latitude": -7.9230104,
+    "longitude": -38.0544586
   },
   {
     "name": "レシフェ",
@@ -3692,20 +3692,20 @@
   {
     "name": "タイロナ国立公園",
     "prefecture": "コロンビア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 11.3235581,
+    "longitude": -74.0518074
   },
   {
     "name": "ゴルゴナ島",
     "prefecture": "コロンビア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 2.9683057,
+    "longitude": -78.1827928
   },
   {
     "name": "マチャリジャ国立公園",
     "prefecture": "エクアドル",
-    "latitude": null,
-    "longitude": null
+    "latitude": -1.4126551,
+    "longitude": -80.7126991
   },
   {
     "name": "マンコラ",
@@ -3716,14 +3716,14 @@
   {
     "name": "ベルレンガス諸島",
     "prefecture": "ポルトガル",
-    "latitude": null,
-    "longitude": null
+    "latitude": 39.3569298,
+    "longitude": -9.5609518
   },
   {
     "name": "セジンブラ",
     "prefecture": "ポルトガル",
-    "latitude": null,
-    "longitude": null
+    "latitude": 38.4436932,
+    "longitude": -9.0996273
   },
   {
     "name": "カボ・デ・パロス",
@@ -3740,8 +3740,8 @@
   {
     "name": "カランク国立公園",
     "prefecture": "フランス",
-    "latitude": null,
-    "longitude": null
+    "latitude": 43.1522205,
+    "longitude": 5.4291326
   },
   {
     "name": "グレナン諸島",
@@ -3752,8 +3752,8 @@
   {
     "name": "カプリ島",
     "prefecture": "イタリア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 25.9892887,
+    "longitude": -81.7357277
   },
   {
     "name": "バイア海底考古学公園",
@@ -3770,14 +3770,14 @@
   {
     "name": "クレタ島",
     "prefecture": "ギリシャ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.3084952,
+    "longitude": 24.4633423
   },
   {
     "name": "アロニソス島",
     "prefecture": "ギリシャ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 39.2123073,
+    "longitude": 23.9093931
   },
   {
     "name": "ボドルム",
@@ -3896,8 +3896,8 @@
   {
     "name": "サルトストラウメン",
     "prefecture": "ノルウェー",
-    "latitude": null,
-    "longitude": null
+    "latitude": 67.2321407,
+    "longitude": 14.6100504
   },
   {
     "name": "リレベルト",
@@ -3932,8 +3932,8 @@
   {
     "name": "ヴェルザスカ川",
     "prefecture": "スイス",
-    "latitude": null,
-    "longitude": null
+    "latitude": 46.2802833,
+    "longitude": 8.8039646
   },
   {
     "name": "レマン湖",
@@ -3968,8 +3968,8 @@
   {
     "name": "モルナール・ヤノーシュ洞窟",
     "prefecture": "ハンガリー",
-    "latitude": null,
-    "longitude": null
+    "latitude": 47.5181319,
+    "longitude": 19.0359332
   },
   {
     "name": "ストライタン",
@@ -3986,14 +3986,14 @@
   {
     "name": "プリンス・ウィリアム湾",
     "prefecture": "アラスカ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 46.6174128,
+    "longitude": -64.1090125
   },
   {
     "name": "セントローレンス川",
     "prefecture": "カナダ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 47.0394195,
+    "longitude": -70.7929378
   },
   {
     "name": "バークレー・サウンド",
@@ -4010,8 +4010,8 @@
   {
     "name": "レイク・タホ",
     "prefecture": "アメリカ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 39.0505411,
+    "longitude": -122.7776556
   },
   {
     "name": "フロリダ",
@@ -4058,14 +4058,14 @@
   {
     "name": "カヨス・コチノス",
     "prefecture": "ホンジュラス",
-    "latitude": null,
-    "longitude": null
+    "latitude": 51.3310305,
+    "longitude": -2.8335775
   },
   {
     "name": "イロパンゴ湖",
     "prefecture": "エルサルバドル",
-    "latitude": null,
-    "longitude": null
+    "latitude": 13.669405,
+    "longitude": -89.0491012
   },
   {
     "name": "ガン・ドカ・マンサニージョ",
@@ -4076,8 +4076,8 @@
   {
     "name": "ガツン湖",
     "prefecture": "パナマ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 9.1657587,
+    "longitude": -79.9436744
   },
   {
     "name": "ボニート",
@@ -4106,8 +4106,8 @@
   {
     "name": "マクマード湾",
     "prefecture": "南極",
-    "latitude": null,
-    "longitude": null
+    "latitude": -77.526649,
+    "longitude": 164.985485
   },
   {
     "name": "タスマニア",
@@ -4124,8 +4124,8 @@
   {
     "name": "ミリオン・ダラー・ポイント",
     "prefecture": "バヌアツ",
-    "latitude": null,
-    "longitude": null
+    "latitude": -15.5242059,
+    "longitude": 167.2430738
   },
   {
     "name": "テニア島",
@@ -4154,8 +4154,8 @@
   {
     "name": "シャンデリア・ケーブ",
     "prefecture": "パル",
-    "latitude": null,
-    "longitude": null
+    "latitude": 47.1770027,
+    "longitude": 3.740842
   },
   {
     "name": "バーティゴ",
@@ -4166,8 +4166,8 @@
   {
     "name": "クバル島",
     "prefecture": "クウェート",
-    "latitude": null,
-    "longitude": null
+    "latitude": 11.5400922,
+    "longitude": 104.9915198
   },
   {
     "name": "オールド・クラブ・リーフ",
@@ -4202,26 +4202,26 @@
   {
     "name": "ミラバット",
     "prefecture": "オマーン",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.0654599,
+    "longitude": 72.9370756
   },
   {
     "name": "ダフラク諸島",
     "prefecture": "エリトリア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 15.724832,
+    "longitude": 40.0800414
   },
   {
     "name": "セブン・ブラザーズ諸島",
     "prefecture": "ジブチ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 12.4703653,
+    "longitude": 43.4309479
   },
   {
     "name": "キシテ・ムプングティ海洋公園",
     "prefecture": "ケニア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -4.7197692,
+    "longitude": 39.3716478
   },
   {
     "name": "キルワ",
@@ -4238,14 +4238,14 @@
   {
     "name": "キャップ・ラ・ウセイ",
     "prefecture": "レユニオン島",
-    "latitude": null,
-    "longitude": null
+    "latitude": -29.2718294,
+    "longitude": -51.9869716
   },
   {
     "name": "ソドワナ・ベイ",
     "prefecture": "南アフリカ",
-    "latitude": null,
-    "longitude": null
+    "latitude": -27.5400201,
+    "longitude": 32.6757833
   },
   {
     "name": "ケープタウン",
@@ -4280,20 +4280,20 @@
   {
     "name": "HMSマオリ",
     "prefecture": "マルタ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.9026619,
+    "longitude": 14.5155983
   },
   {
     "name": "ペリステラ",
     "prefecture": "ギリシャ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 39.2020404,
+    "longitude": 23.9804402
   },
   {
     "name": "ガリポリ",
     "prefecture": "トルコ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 40.3106747,
+    "longitude": 26.4063769
   },
   {
     "name": "アル・ホセイマ",
@@ -4346,26 +4346,26 @@
   {
     "name": "ブラックロック",
     "prefecture": "ミャンマー",
-    "latitude": null,
-    "longitude": null
+    "latitude": 11.3901196,
+    "longitude": 97.666141
   },
   {
     "name": "フィッシュヘッド",
     "prefecture": "モルディブ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 3.9359727,
+    "longitude": 72.9131414
   },
   {
     "name": "バナナリーフ",
     "prefecture": "モルディブ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 4.2156682,
+    "longitude": 73.544258
   },
   {
     "name": "マンタポイント",
     "prefecture": "モルディブ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 3.895817,
+    "longitude": 73.456299
   },
   {
     "name": "SSシストルゴーム",
@@ -4388,8 +4388,8 @@
   {
     "name": "ネイビー・ピア",
     "prefecture": "オーストラリア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -35.2978972,
+    "longitude": 149.1434945
   },
   {
     "name": "コッド・ホール",
@@ -4400,14 +4400,14 @@
   {
     "name": "オスプレイ・リーフ",
     "prefecture": "オーストラリア",
-    "latitude": null,
-    "longitude": null
+    "latitude": -21.1652099,
+    "longitude": 149.1954203
   },
   {
     "name": "エドゥアルドズ・ポイント",
     "prefecture": "パプアニューギニア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 19.3882256,
+    "longitude": -99.1307658
   },
   {
     "name": "トア丸",
@@ -4418,14 +4418,14 @@
   {
     "name": "水中郵便局",
     "prefecture": "バヌアツ",
-    "latitude": null,
-    "longitude": null
+    "latitude": -17.6982043,
+    "longitude": 168.2624904
   },
   {
     "name": "サンフランシスコ丸",
     "prefecture": "ミクロネシア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 37.7896242,
+    "longitude": -122.408938
   },
   {
     "name": "富士川丸",
@@ -4436,14 +4436,14 @@
   {
     "name": "プリンツ・オイゲン",
     "prefecture": "マーシャル諸島",
-    "latitude": null,
-    "longitude": null
+    "latitude": 8.7528874,
+    "longitude": 167.6829296
   },
   {
     "name": "USSオリスカニー",
     "prefecture": "アメリカ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 30.0438888,
+    "longitude": -87.0069444
   },
   {
     "name": "USSスピーゲル・グローブ",
@@ -4454,14 +4454,14 @@
   {
     "name": "スプーキー・チャンネル",
     "prefecture": "アメリカ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 44.9437903,
+    "longitude": -92.7317916
   },
   {
     "name": "スティングレイ・シティ",
     "prefecture": "ケイマン諸島",
-    "latitude": null,
-    "longitude": null
+    "latitude": 19.270104,
+    "longitude": -81.3876515
   },
   {
     "name": "ディーンズ・ブルーホール",
@@ -4478,26 +4478,26 @@
   {
     "name": "ブルシャーク・ポイント",
     "prefecture": "メキシコ",
-    "latitude": null,
-    "longitude": null
+    "latitude": -33.7881258,
+    "longitude": 150.8681031
   },
   {
     "name": "ハーフムーン・キー",
     "prefecture": "ベリーズ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 17.2054507,
+    "longitude": -87.5363927
   },
   {
     "name": "ヒルマ・フッカー号",
     "prefecture": "オランダ領アンティル",
-    "latitude": null,
-    "longitude": null
+    "latitude": 55.6004241,
+    "longitude": 13.0096915
   },
   {
     "name": "ペデルナレス号",
     "prefecture": "アルバ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 17.9723696,
+    "longitude": -71.5454265
   },
   {
     "name": "水中彫刻公園",
@@ -4508,8 +4508,8 @@
   {
     "name": "クリスタルリバー",
     "prefecture": "ブラジル",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.902479,
+    "longitude": -82.5926012
   },
   {
     "name": "プエルト・モン",
@@ -4520,8 +4520,8 @@
   {
     "name": "ナルヴィク",
     "prefecture": "ノルウェー",
-    "latitude": null,
-    "longitude": null
+    "latitude": 68.4383796,
+    "longitude": 17.4271978
   },
   {
     "name": "シリー諸島",
@@ -4550,8 +4550,8 @@
   {
     "name": "ミロス島",
     "prefecture": "ギリシャ",
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.7093441,
+    "longitude": 24.5068338
   },
   {
     "name": "バロン・ゴーシュ",
@@ -4568,7 +4568,7 @@
   {
     "name": "グリーン・レイク",
     "prefecture": "オーストリア",
-    "latitude": null,
-    "longitude": null
+    "latitude": 46.8268334,
+    "longitude": 12.8087646
   }
 ]
