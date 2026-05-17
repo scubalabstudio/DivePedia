@@ -43,7 +43,9 @@ def import_diving_points(json_file_path):
                 'name': point.get('name'),
                 'code': point.get('code'),
                 'url': point.get('url'),
-                'prefecture': point.get('prefecture')
+                'prefecture': point.get('prefecture'),
+                'latitude': point.get('latitude'),
+                'longitude': point.get('longitude'),
             }
             formatted_points.append(formatted_point)
         else:
