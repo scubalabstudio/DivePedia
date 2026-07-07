@@ -1,3 +1,8 @@
+-- diving_pointsにlatitude/longitudeカラムを追加
+ALTER TABLE diving_points
+  ADD COLUMN IF NOT EXISTS latitude  DOUBLE PRECISION,
+  ADD COLUMN IF NOT EXISTS longitude DOUBLE PRECISION;
+
 -- 現在地から半径radius_km以内のダイビングポイントを距離順で返すRPC関数
 CREATE OR REPLACE FUNCTION nearest_diving_points(
   user_lat      DOUBLE PRECISION,
